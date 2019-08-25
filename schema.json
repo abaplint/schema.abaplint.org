@@ -50,7 +50,16 @@
     "AvoidUseConf": {
       "additionalProperties": false,
       "properties": {
+        "communication": {
+          "type": "boolean"
+        },
+        "define": {
+          "type": "boolean"
+        },
         "enabled": {
+          "type": "boolean"
+        },
+        "endselect": {
           "type": "boolean"
         },
         "exclude": {
@@ -58,11 +67,26 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "execSQL": {
+          "type": "boolean"
+        },
+        "kernelCall": {
+          "type": "boolean"
+        },
+        "statics": {
+          "type": "boolean"
         }
       },
       "required": [
+        "communication",
+        "define",
         "enabled",
-        "exclude"
+        "endselect",
+        "exclude",
+        "execSQL",
+        "kernelCall",
+        "statics"
       ],
       "type": "object"
     },
@@ -293,16 +317,28 @@
         "enabled": {
           "type": "boolean"
         },
+        "endParen": {
+          "type": "boolean"
+        },
         "exclude": {
           "items": {
             "type": "string"
           },
           "type": "array"
+        },
+        "keywords": {
+          "type": "boolean"
+        },
+        "startParen": {
+          "type": "boolean"
         }
       },
       "required": [
         "enabled",
-        "exclude"
+        "endParen",
+        "exclude",
+        "keywords",
+        "startParen"
       ],
       "type": "object"
     },
@@ -696,70 +732,6 @@
               "$ref": "#/definitions/WhitespaceEndConf"
             }
           },
-          "required": [
-            "7bit_ascii",
-            "allowed_object_types",
-            "ambiguous_statement",
-            "avoid_use",
-            "begin_end_names",
-            "breakpoint",
-            "check_variables",
-            "class_attribute_names",
-            "cloud_types",
-            "colon_missing_space",
-            "commented_code",
-            "constructor_visibility_public",
-            "contains_tab",
-            "definitions_top",
-            "description_empty",
-            "double_space",
-            "empty_line_in_statement",
-            "empty_statement",
-            "empty_structure",
-            "exit_or_check",
-            "exporting",
-            "form_tables_obsolete",
-            "functional_writing",
-            "global_class",
-            "identical_form_names",
-            "if_in_if",
-            "implement_methods",
-            "in_statement_indentation",
-            "indentation",
-            "inline_data_old_versions",
-            "keywords_upper",
-            "line_length",
-            "line_only_punc",
-            "local_class_naming",
-            "local_testclass_location",
-            "local_variable_names",
-            "main_file_contents",
-            "max_one_statement",
-            "message_exists",
-            "method_length",
-            "method_parameter_names",
-            "mix_returning",
-            "msag_consistency",
-            "nesting",
-            "no_public_attributes",
-            "object_naming",
-            "obsolete_statement",
-            "parser_error",
-            "preferred_compare_operator",
-            "remove_descriptions",
-            "sequential_blank",
-            "short_case",
-            "space_before_colon",
-            "space_before_dot",
-            "start_at_tab",
-            "superclass_final",
-            "tabl_enhancement_category",
-            "type_form_parameters",
-            "unreachable_code",
-            "use_new",
-            "when_others_last",
-            "whitespace_end"
-          ],
           "type": "object"
         },
         "syntax": {
@@ -1355,19 +1327,75 @@
     "ObjectNamingConf": {
       "additionalProperties": false,
       "properties": {
+        "auth": {
+          "type": "string"
+        },
+        "clas": {
+          "type": "string"
+        },
+        "doma": {
+          "type": "string"
+        },
+        "dtel": {
+          "type": "string"
+        },
         "enabled": {
           "type": "boolean"
+        },
+        "enqu": {
+          "type": "string"
         },
         "exclude": {
           "items": {
             "type": "string"
           },
           "type": "array"
+        },
+        "fugr": {
+          "type": "string"
+        },
+        "idoc": {
+          "type": "string"
+        },
+        "intf": {
+          "type": "string"
+        },
+        "msag": {
+          "type": "string"
+        },
+        "pinf": {
+          "type": "string"
+        },
+        "prog": {
+          "type": "string"
+        },
+        "tabl": {
+          "type": "string"
+        },
+        "tran": {
+          "type": "string"
+        },
+        "ttyp": {
+          "type": "string"
         }
       },
       "required": [
+        "auth",
+        "clas",
+        "doma",
+        "dtel",
         "enabled",
-        "exclude"
+        "enqu",
+        "exclude",
+        "fugr",
+        "idoc",
+        "intf",
+        "msag",
+        "pinf",
+        "prog",
+        "tabl",
+        "tran",
+        "ttyp"
       ],
       "type": "object"
     },
@@ -1444,6 +1472,12 @@
     "PreferredCompareOperatorConf": {
       "additionalProperties": false,
       "properties": {
+        "badOperators": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
         "enabled": {
           "type": "boolean"
         },
@@ -1455,6 +1489,7 @@
         }
       },
       "required": [
+        "badOperators",
         "enabled",
         "exclude"
       ],
