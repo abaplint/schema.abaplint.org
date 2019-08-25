@@ -1,0 +1,1757 @@
+{
+  "$ref": "#/definitions/IConfig",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "AllowedObjectTypesConf": {
+      "additionalProperties": false,
+      "properties": {
+        "allowed": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "allowed",
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "AmbiguousStatementConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "AvoidUseConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "BeginEndNamesConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "BreakpointConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "CheckVariablesConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "ClassAttributeNamesConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "ignoreExceptions": {
+          "type": "boolean"
+        },
+        "instance": {
+          "type": "string"
+        },
+        "statics": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude",
+        "ignoreExceptions",
+        "instance",
+        "statics"
+      ],
+      "type": "object"
+    },
+    "CloudTypesConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "ColonMissingSpaceConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "CommentedCodeConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "ConstructorVisibilityPublicConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "ContainsTabConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "DefinitionsTopConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "DescriptionEmptyConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "DoubleSpaceConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "EmptyLineinStatementConf": {
+      "additionalProperties": false,
+      "properties": {
+        "allowChained": {
+          "type": "boolean"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "allowChained",
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "EmptyStatementConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "EmptyStructureConf": {
+      "additionalProperties": false,
+      "properties": {
+        "at": {
+          "type": "boolean"
+        },
+        "case": {
+          "type": "boolean"
+        },
+        "do": {
+          "type": "boolean"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "if": {
+          "type": "boolean"
+        },
+        "loop": {
+          "type": "boolean"
+        },
+        "select": {
+          "type": "boolean"
+        },
+        "while": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "at",
+        "case",
+        "do",
+        "enabled",
+        "exclude",
+        "if",
+        "loop",
+        "select",
+        "while"
+      ],
+      "type": "object"
+    },
+    "ExitOrCheckConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "ExportingConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "FormTablesObsoleteConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "FunctionalWritingConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "ignoreExceptions": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude",
+        "ignoreExceptions"
+      ],
+      "type": "object"
+    },
+    "GlobalClassConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "IConfig": {
+      "additionalProperties": false,
+      "properties": {
+        "dependencies": {
+          "items": {
+            "$ref": "#/definitions/IDependency"
+          },
+          "type": "array"
+        },
+        "global": {
+          "$ref": "#/definitions/IGlobalConfig"
+        },
+        "rules": {
+          "additionalProperties": false,
+          "properties": {
+            "7bit_ascii": {
+              "$ref": "#/definitions/SevenBitAsciiConf"
+            },
+            "allowed_object_types": {
+              "$ref": "#/definitions/AllowedObjectTypesConf"
+            },
+            "ambiguous_statement": {
+              "$ref": "#/definitions/AmbiguousStatementConf"
+            },
+            "avoid_use": {
+              "$ref": "#/definitions/AvoidUseConf"
+            },
+            "begin_end_names": {
+              "$ref": "#/definitions/BeginEndNamesConf"
+            },
+            "breakpoint": {
+              "$ref": "#/definitions/BreakpointConf"
+            },
+            "check_variables": {
+              "$ref": "#/definitions/CheckVariablesConf"
+            },
+            "class_attribute_names": {
+              "$ref": "#/definitions/ClassAttributeNamesConf"
+            },
+            "cloud_types": {
+              "$ref": "#/definitions/CloudTypesConf"
+            },
+            "colon_missing_space": {
+              "$ref": "#/definitions/ColonMissingSpaceConf"
+            },
+            "commented_code": {
+              "$ref": "#/definitions/CommentedCodeConf"
+            },
+            "constructor_visibility_public": {
+              "$ref": "#/definitions/ConstructorVisibilityPublicConf"
+            },
+            "contains_tab": {
+              "$ref": "#/definitions/ContainsTabConf"
+            },
+            "definitions_top": {
+              "$ref": "#/definitions/DefinitionsTopConf"
+            },
+            "description_empty": {
+              "$ref": "#/definitions/DescriptionEmptyConf"
+            },
+            "double_space": {
+              "$ref": "#/definitions/DoubleSpaceConf"
+            },
+            "empty_line_in_statement": {
+              "$ref": "#/definitions/EmptyLineinStatementConf"
+            },
+            "empty_statement": {
+              "$ref": "#/definitions/EmptyStatementConf"
+            },
+            "empty_structure": {
+              "$ref": "#/definitions/EmptyStructureConf"
+            },
+            "exit_or_check": {
+              "$ref": "#/definitions/ExitOrCheckConf"
+            },
+            "exporting": {
+              "$ref": "#/definitions/ExportingConf"
+            },
+            "form_tables_obsolete": {
+              "$ref": "#/definitions/FormTablesObsoleteConf"
+            },
+            "functional_writing": {
+              "$ref": "#/definitions/FunctionalWritingConf"
+            },
+            "global_class": {
+              "$ref": "#/definitions/GlobalClassConf"
+            },
+            "identical_form_names": {
+              "$ref": "#/definitions/IdenticalFormNamesConf"
+            },
+            "if_in_if": {
+              "$ref": "#/definitions/IfInIfConf"
+            },
+            "implement_methods": {
+              "$ref": "#/definitions/ImplementMethodsConf"
+            },
+            "in_statement_indentation": {
+              "$ref": "#/definitions/InStatementIndentationConf"
+            },
+            "indentation": {
+              "$ref": "#/definitions/IndentationConf"
+            },
+            "inline_data_old_versions": {
+              "$ref": "#/definitions/InlineDataOldVersionsConf"
+            },
+            "keywords_upper": {
+              "$ref": "#/definitions/KeywordsUpperConf"
+            },
+            "line_length": {
+              "$ref": "#/definitions/LineLengthConf"
+            },
+            "line_only_punc": {
+              "$ref": "#/definitions/LineOnlyPuncConf"
+            },
+            "local_class_naming": {
+              "$ref": "#/definitions/LocalClassNamingConf"
+            },
+            "local_testclass_location": {
+              "$ref": "#/definitions/LocalTestclassLocationConf"
+            },
+            "local_variable_names": {
+              "$ref": "#/definitions/LocalVariableNamesConf"
+            },
+            "main_file_contents": {
+              "$ref": "#/definitions/MainFileContentsConf"
+            },
+            "max_one_statement": {
+              "$ref": "#/definitions/MaxOneStatementConf"
+            },
+            "message_exists": {
+              "$ref": "#/definitions/MessageExistsConf"
+            },
+            "method_length": {
+              "$ref": "#/definitions/MethodLengthConf"
+            },
+            "method_parameter_names": {
+              "$ref": "#/definitions/MethodParameterNamesConf"
+            },
+            "mix_returning": {
+              "$ref": "#/definitions/MixReturningConf"
+            },
+            "msag_consistency": {
+              "$ref": "#/definitions/MSAGConsistencyConf"
+            },
+            "nesting": {
+              "$ref": "#/definitions/NestingConf"
+            },
+            "no_public_attributes": {
+              "$ref": "#/definitions/NoPublicAttributesConf"
+            },
+            "object_naming": {
+              "$ref": "#/definitions/ObjectNamingConf"
+            },
+            "obsolete_statement": {
+              "$ref": "#/definitions/ObsoleteStatementConf"
+            },
+            "parser_error": {
+              "$ref": "#/definitions/ParserErrorConf"
+            },
+            "preferred_compare_operator": {
+              "$ref": "#/definitions/PreferredCompareOperatorConf"
+            },
+            "remove_descriptions": {
+              "$ref": "#/definitions/RemoveDescriptionsConf"
+            },
+            "sequential_blank": {
+              "$ref": "#/definitions/SequentialBlankConf"
+            },
+            "short_case": {
+              "$ref": "#/definitions/ShortCaseConf"
+            },
+            "space_before_colon": {
+              "$ref": "#/definitions/SpaceBeforeColonConf"
+            },
+            "space_before_dot": {
+              "$ref": "#/definitions/SpaceBeforeDotConf"
+            },
+            "start_at_tab": {
+              "$ref": "#/definitions/StartAtTabConf"
+            },
+            "superclass_final": {
+              "$ref": "#/definitions/SuperclassFinalConf"
+            },
+            "tabl_enhancement_category": {
+              "$ref": "#/definitions/TABLEnhancementCategoryConf"
+            },
+            "type_form_parameters": {
+              "$ref": "#/definitions/TypeFormParametersConf"
+            },
+            "unreachable_code": {
+              "$ref": "#/definitions/UnreachableCodeConf"
+            },
+            "use_new": {
+              "$ref": "#/definitions/UseNewConf"
+            },
+            "when_others_last": {
+              "$ref": "#/definitions/WhenOthersLastConf"
+            },
+            "whitespace_end": {
+              "$ref": "#/definitions/WhitespaceEndConf"
+            }
+          },
+          "required": [
+            "7bit_ascii",
+            "allowed_object_types",
+            "ambiguous_statement",
+            "avoid_use",
+            "begin_end_names",
+            "breakpoint",
+            "check_variables",
+            "class_attribute_names",
+            "cloud_types",
+            "colon_missing_space",
+            "commented_code",
+            "constructor_visibility_public",
+            "contains_tab",
+            "definitions_top",
+            "description_empty",
+            "double_space",
+            "empty_line_in_statement",
+            "empty_statement",
+            "empty_structure",
+            "exit_or_check",
+            "exporting",
+            "form_tables_obsolete",
+            "functional_writing",
+            "global_class",
+            "identical_form_names",
+            "if_in_if",
+            "implement_methods",
+            "in_statement_indentation",
+            "indentation",
+            "inline_data_old_versions",
+            "keywords_upper",
+            "line_length",
+            "line_only_punc",
+            "local_class_naming",
+            "local_testclass_location",
+            "local_variable_names",
+            "main_file_contents",
+            "max_one_statement",
+            "message_exists",
+            "method_length",
+            "method_parameter_names",
+            "mix_returning",
+            "msag_consistency",
+            "nesting",
+            "no_public_attributes",
+            "object_naming",
+            "obsolete_statement",
+            "parser_error",
+            "preferred_compare_operator",
+            "remove_descriptions",
+            "sequential_blank",
+            "short_case",
+            "space_before_colon",
+            "space_before_dot",
+            "start_at_tab",
+            "superclass_final",
+            "tabl_enhancement_category",
+            "type_form_parameters",
+            "unreachable_code",
+            "use_new",
+            "when_others_last",
+            "whitespace_end"
+          ],
+          "type": "object"
+        },
+        "syntax": {
+          "$ref": "#/definitions/ISyntaxSettings"
+        }
+      },
+      "required": [
+        "global",
+        "dependencies",
+        "syntax",
+        "rules"
+      ],
+      "type": "object"
+    },
+    "IDependency": {
+      "additionalProperties": false,
+      "properties": {
+        "files": {
+          "type": "string"
+        },
+        "folder": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "files"
+      ],
+      "type": "object"
+    },
+    "IGlobalConfig": {
+      "additionalProperties": false,
+      "properties": {
+        "applyUnspecifiedRules": {
+          "type": "boolean"
+        },
+        "skipGeneratedFunctionGroups": {
+          "type": "boolean"
+        },
+        "skipGeneratedGatewayClasses": {
+          "type": "boolean"
+        },
+        "skipGeneratedPersistentClasses": {
+          "type": "boolean"
+        },
+        "version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "version",
+        "skipGeneratedGatewayClasses",
+        "skipGeneratedPersistentClasses",
+        "skipGeneratedFunctionGroups",
+        "applyUnspecifiedRules"
+      ],
+      "type": "object"
+    },
+    "ISyntaxSettings": {
+      "additionalProperties": false,
+      "properties": {
+        "errorNamespace": {
+          "type": "string"
+        },
+        "globalConstants": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "globalMacros": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "errorNamespace",
+        "globalConstants",
+        "globalMacros"
+      ],
+      "type": "object"
+    },
+    "IdenticalFormNamesConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "IfInIfConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "ImplementMethodsConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "InStatementIndentationConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "ignoreExceptions": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude",
+        "ignoreExceptions"
+      ],
+      "type": "object"
+    },
+    "IndentationConf": {
+      "additionalProperties": false,
+      "properties": {
+        "alignTryCatch": {
+          "type": "boolean"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "globalClassSkipFirst": {
+          "type": "boolean"
+        },
+        "ignoreExceptions": {
+          "type": "boolean"
+        },
+        "ignoreGlobalClassDefinition": {
+          "type": "boolean"
+        },
+        "ignoreGlobalInterface": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "alignTryCatch",
+        "enabled",
+        "exclude",
+        "globalClassSkipFirst",
+        "ignoreExceptions",
+        "ignoreGlobalClassDefinition",
+        "ignoreGlobalInterface"
+      ],
+      "type": "object"
+    },
+    "InlineDataOldVersionsConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "KeywordsUpperConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "ignoreExceptions": {
+          "type": "boolean"
+        },
+        "ignoreFunctionModuleName": {
+          "type": "boolean"
+        },
+        "ignoreGlobalClassDefinition": {
+          "type": "boolean"
+        },
+        "ignoreGlobalInterface": {
+          "type": "boolean"
+        },
+        "ignoreLowerClassImplmentationStatement": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude",
+        "ignoreExceptions",
+        "ignoreFunctionModuleName",
+        "ignoreGlobalClassDefinition",
+        "ignoreGlobalInterface",
+        "ignoreLowerClassImplmentationStatement"
+      ],
+      "type": "object"
+    },
+    "LineLengthConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "length": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude",
+        "length"
+      ],
+      "type": "object"
+    },
+    "LineOnlyPuncConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "ignoreExceptions": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude",
+        "ignoreExceptions"
+      ],
+      "type": "object"
+    },
+    "LocalClassNamingConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "local": {
+          "type": "string"
+        },
+        "test": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude",
+        "local",
+        "test"
+      ],
+      "type": "object"
+    },
+    "LocalTestclassLocationConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "LocalVariableNamesConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "expectedConstant": {
+          "type": "string"
+        },
+        "expectedData": {
+          "type": "string"
+        },
+        "expectedFS": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude",
+        "expectedConstant",
+        "expectedData",
+        "expectedFS"
+      ],
+      "type": "object"
+    },
+    "MSAGConsistencyConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "MainFileContentsConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "MaxOneStatementConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "MessageExistsConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "MethodLengthConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "statements": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude",
+        "statements"
+      ],
+      "type": "object"
+    },
+    "MethodParameterNamesConf": {
+      "additionalProperties": false,
+      "properties": {
+        "changing": {
+          "type": "string"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "exporting": {
+          "type": "string"
+        },
+        "ignoreExceptions": {
+          "type": "boolean"
+        },
+        "ignoreNames": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "importing": {
+          "type": "string"
+        },
+        "returning": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "changing",
+        "enabled",
+        "exclude",
+        "exporting",
+        "ignoreExceptions",
+        "ignoreNames",
+        "importing",
+        "returning"
+      ],
+      "type": "object"
+    },
+    "MixReturningConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "NestingConf": {
+      "additionalProperties": false,
+      "properties": {
+        "depth": {
+          "type": "number"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "depth",
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "NoPublicAttributesConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "ObjectNamingConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "ObsoleteStatementConf": {
+      "additionalProperties": false,
+      "properties": {
+        "add": {
+          "type": "boolean"
+        },
+        "compute": {
+          "type": "boolean"
+        },
+        "divide": {
+          "type": "boolean"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "move": {
+          "type": "boolean"
+        },
+        "multiply": {
+          "type": "boolean"
+        },
+        "refresh": {
+          "type": "boolean"
+        },
+        "requested": {
+          "type": "boolean"
+        },
+        "subtract": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "add",
+        "compute",
+        "divide",
+        "enabled",
+        "exclude",
+        "move",
+        "multiply",
+        "refresh",
+        "requested",
+        "subtract"
+      ],
+      "type": "object"
+    },
+    "ParserErrorConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "PreferredCompareOperatorConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "RemoveDescriptionsConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "ignoreExceptions": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude",
+        "ignoreExceptions"
+      ],
+      "type": "object"
+    },
+    "SequentialBlankConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "lines": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude",
+        "lines"
+      ],
+      "type": "object"
+    },
+    "SevenBitAsciiConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "ShortCaseConf": {
+      "additionalProperties": false,
+      "properties": {
+        "allow": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "length": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "allow",
+        "enabled",
+        "exclude",
+        "length"
+      ],
+      "type": "object"
+    },
+    "SpaceBeforeColonConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "SpaceBeforeDotConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "ignoreExceptions": {
+          "type": "boolean"
+        },
+        "ignoreGlobalDefinition": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude",
+        "ignoreExceptions",
+        "ignoreGlobalDefinition"
+      ],
+      "type": "object"
+    },
+    "StartAtTabConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "SuperclassFinalConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "TABLEnhancementCategoryConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "TypeFormParametersConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "UnreachableCodeConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "UseNewConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "WhenOthersLastConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
+    "WhitespaceEndConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    }
+  }
+}
