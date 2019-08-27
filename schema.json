@@ -128,6 +128,25 @@
       ],
       "type": "object"
     },
+    "CheckTransformationExistsConf": {
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "exclude": {
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "enabled",
+        "exclude"
+      ],
+      "type": "object"
+    },
     "CheckVariablesConf": {
       "additionalProperties": false,
       "properties": {
@@ -562,6 +581,9 @@
             },
             "breakpoint": {
               "$ref": "#/definitions/BreakpointConf"
+            },
+            "check_transformation_exists": {
+              "$ref": "#/definitions/CheckTransformationExistsConf"
             },
             "check_variables": {
               "$ref": "#/definitions/CheckVariablesConf"
