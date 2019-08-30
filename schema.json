@@ -792,6 +792,9 @@
         "applyUnspecifiedRules": {
           "type": "boolean"
         },
+        "files": {
+          "type": "string"
+        },
         "skipGeneratedFunctionGroups": {
           "type": "boolean"
         },
@@ -800,13 +803,10 @@
         },
         "skipGeneratedPersistentClasses": {
           "type": "boolean"
-        },
-        "version": {
-          "type": "string"
         }
       },
       "required": [
-        "version",
+        "files",
         "skipGeneratedGatewayClasses",
         "skipGeneratedPersistentClasses",
         "skipGeneratedFunctionGroups",
@@ -831,9 +831,13 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "version": {
+          "type": "string"
         }
       },
       "required": [
+        "version",
         "errorNamespace",
         "globalConstants",
         "globalMacros"
