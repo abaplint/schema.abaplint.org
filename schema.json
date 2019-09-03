@@ -4,6 +4,7 @@
   "definitions": {
     "AllowedObjectTypesConf": {
       "additionalProperties": false,
+      "description": "Restricts the set of allowed object types.",
       "properties": {
         "allowed": {
           "items": {
@@ -30,6 +31,7 @@
     },
     "AmbiguousStatementConf": {
       "additionalProperties": false,
+      "description": "Checks for ambiguity between deleting from internal and database table",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -49,17 +51,21 @@
     },
     "AvoidUseConf": {
       "additionalProperties": false,
+      "description": "Detects usage of certain statements.",
       "properties": {
         "communication": {
+          "description": "Detects communication",
           "type": "boolean"
         },
         "define": {
+          "description": "Detects define (macro definitions)",
           "type": "boolean"
         },
         "enabled": {
           "type": "boolean"
         },
         "endselect": {
+          "description": "Detects endselect",
           "type": "boolean"
         },
         "exclude": {
@@ -69,12 +75,15 @@
           "type": "array"
         },
         "execSQL": {
+          "description": "Detects execSQL (dynamic SQL)",
           "type": "boolean"
         },
         "kernelCall": {
+          "description": "Detects kernel calls",
           "type": "boolean"
         },
         "statics": {
+          "description": "Detects statics",
           "type": "boolean"
         }
       },
@@ -111,6 +120,7 @@
     },
     "BreakpointConf": {
       "additionalProperties": false,
+      "description": "Detects usage of code-based breakpoints.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -130,6 +140,7 @@
     },
     "CheckTransformationExistsConf": {
       "additionalProperties": false,
+      "description": "Checks that used XSLT transformations exist.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -149,6 +160,7 @@
     },
     "CheckVariablesConf": {
       "additionalProperties": false,
+      "description": "Enables variable resolution",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -168,6 +180,7 @@
     },
     "ClassAttributeNamesConf": {
       "additionalProperties": false,
+      "description": "Allows you to enforce a pattern, such as a prefix, for class variable names.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -182,9 +195,11 @@
           "type": "boolean"
         },
         "instance": {
+          "description": "The pattern for instance variable names",
           "type": "string"
         },
         "statics": {
+          "description": "The pattern for static variable names",
           "type": "string"
         }
       },
@@ -199,6 +214,7 @@
     },
     "CloudTypesConf": {
       "additionalProperties": false,
+      "description": "Checks that the package does not contain any object types unsupported in cloud ABAP.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -218,6 +234,7 @@
     },
     "ColonMissingSpaceConf": {
       "additionalProperties": false,
+      "description": "Checks for missing spaces after colons in chained statements.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -237,6 +254,7 @@
     },
     "CommentedCodeConf": {
       "additionalProperties": false,
+      "description": "Detects usage of commented out code.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -256,6 +274,7 @@
     },
     "ConstructorVisibilityPublicConf": {
       "additionalProperties": false,
+      "description": "Constructor must be placed in the public section, even if the class is not CREATE PUBLIC.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -275,6 +294,7 @@
     },
     "ContainsTabConf": {
       "additionalProperties": false,
+      "description": "Checks for usage of tabs (enable to enforce spaces).",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -294,6 +314,7 @@
     },
     "DefinitionsTopConf": {
       "additionalProperties": false,
+      "description": "Checks that definitions are placed at the beginning of methods.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -313,6 +334,7 @@
     },
     "DescriptionEmptyConf": {
       "additionalProperties": false,
+      "description": "Ensures descriptions in class metadata exist.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -332,6 +354,7 @@
     },
     "DoubleSpaceConf": {
       "additionalProperties": false,
+      "description": "Checks that only a single space follows certain common statements.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -363,6 +386,7 @@
     },
     "EmptyLineinStatementConf": {
       "additionalProperties": false,
+      "description": "Checks that statements do not contain empty lines.",
       "properties": {
         "allowChained": {
           "type": "boolean"
@@ -386,6 +410,7 @@
     },
     "EmptyStatementConf": {
       "additionalProperties": false,
+      "description": "Checks for empty statements (an empty statement is a single dot)",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -405,14 +430,18 @@
     },
     "EmptyStructureConf": {
       "additionalProperties": false,
+      "description": "Checks that the code does not contain empty blocks.",
       "properties": {
         "at": {
+          "description": "Checks for empty at blocks",
           "type": "boolean"
         },
         "case": {
+          "description": "Checks for empty case blocks",
           "type": "boolean"
         },
         "do": {
+          "description": "Checks for empty do blocks",
           "type": "boolean"
         },
         "enabled": {
@@ -425,15 +454,19 @@
           "type": "array"
         },
         "if": {
+          "description": "Checks for empty if blocks",
           "type": "boolean"
         },
         "loop": {
+          "description": "Checks for empty loop blocks",
           "type": "boolean"
         },
         "select": {
+          "description": "Checks for empty select blockss",
           "type": "boolean"
         },
         "while": {
+          "description": "Checks for empty while blocks",
           "type": "boolean"
         }
       },
@@ -452,6 +485,7 @@
     },
     "ExitOrCheckConf": {
       "additionalProperties": false,
+      "description": "Detects usages of EXIT or CHECK statements outside of loops.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -471,6 +505,7 @@
     },
     "ExportingConf": {
       "additionalProperties": false,
+      "description": "Detects EXPORTING statements which can be omitted.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -490,6 +525,7 @@
     },
     "FormTablesObsoleteConf": {
       "additionalProperties": false,
+      "description": "Checks for TABLES parameters in forms.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -509,6 +545,7 @@
     },
     "FunctionalWritingConf": {
       "additionalProperties": false,
+      "description": "Detects usage of call method when functional style calls can be used.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -532,6 +569,7 @@
     },
     "GlobalClassConf": {
       "additionalProperties": false,
+      "description": "Checks related to names of global classes. For the name pattern, see rule object_naming",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -846,6 +884,7 @@
     },
     "IdenticalFormNamesConf": {
       "additionalProperties": false,
+      "description": "Detects identically named forms.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -865,6 +904,7 @@
     },
     "IfInIfConf": {
       "additionalProperties": false,
+      "description": "Detects nested ifs which can be refactored to a single condition using AND.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -884,6 +924,7 @@
     },
     "ImplementMethodsConf": {
       "additionalProperties": false,
+      "description": "Chekcs for abstract methods which need implementing.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -903,6 +944,7 @@
     },
     "InStatementIndentationConf": {
       "additionalProperties": false,
+      "description": "Checks alignment within block statement declarations which span multiple lines, such as multiple conditions in IF statements.\nExample:\nIF 1 = 1 AND\n  2 = 2.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -965,6 +1007,7 @@
     },
     "InlineDataOldVersionsConf": {
       "additionalProperties": false,
+      "description": "Checks for inline data declarations in older releases.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -984,6 +1027,7 @@
     },
     "KeywordsUpperConf": {
       "additionalProperties": false,
+      "description": "Detects keywords which are not uppercased.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1023,6 +1067,7 @@
     },
     "LineLengthConf": {
       "additionalProperties": false,
+      "description": "Detects lines exceeding the provided maximum length.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1034,6 +1079,7 @@
           "type": "array"
         },
         "length": {
+          "description": "Maximum line length in characters",
           "type": "number"
         }
       },
@@ -1046,6 +1092,7 @@
     },
     "LineOnlyPuncConf": {
       "additionalProperties": false,
+      "description": "Detects lines containing only punctuation.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1069,6 +1116,7 @@
     },
     "LocalClassNamingConf": {
       "additionalProperties": false,
+      "description": "Allows you to enforce a pattern, such as a prefix, for local class names.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1080,9 +1128,11 @@
           "type": "array"
         },
         "local": {
+          "description": "The pattern for local class names",
           "type": "string"
         },
         "test": {
+          "description": "The pattern for local test class names",
           "type": "string"
         }
       },
@@ -1096,6 +1146,7 @@
     },
     "LocalTestclassLocationConf": {
       "additionalProperties": false,
+      "description": "Chceks that local test classes are placed in the test include.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1115,6 +1166,7 @@
     },
     "LocalVariableNamesConf": {
       "additionalProperties": false,
+      "description": "Allows you to enforce a pattern, such as a prefix, for local variables, constants and field symbols.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1126,12 +1178,15 @@
           "type": "array"
         },
         "expectedConstant": {
+          "description": "The pattern for local constant names",
           "type": "string"
         },
         "expectedData": {
+          "description": "The pattern for local variable names",
           "type": "string"
         },
         "expectedFS": {
+          "description": "The pattern for field symbol names",
           "type": "string"
         }
       },
@@ -1146,6 +1201,7 @@
     },
     "MSAGConsistencyConf": {
       "additionalProperties": false,
+      "description": "Checks the validity of messages in message classes",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1165,6 +1221,7 @@
     },
     "MainFileContentsConf": {
       "additionalProperties": false,
+      "description": "Checks related to report declarations.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1184,6 +1241,7 @@
     },
     "MaxOneStatementConf": {
       "additionalProperties": false,
+      "description": "Chekcks that each line contains only a single statement.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1203,6 +1261,7 @@
     },
     "MessageExistsConf": {
       "additionalProperties": false,
+      "description": "In message statements, check that the message class + id exist",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1222,6 +1281,7 @@
     },
     "MethodLengthConf": {
       "additionalProperties": false,
+      "description": "Chcecks that methods do not exceed the set number of statements",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1233,6 +1293,7 @@
           "type": "array"
         },
         "statements": {
+          "description": "Maximum method length in statements",
           "type": "number"
         }
       },
@@ -1245,8 +1306,10 @@
     },
     "MethodParameterNamesConf": {
       "additionalProperties": false,
+      "description": "Allows you to enforce a pattern, such as a prefix, for method parameter names",
       "properties": {
         "changing": {
+          "description": "The pattern for changing parameters",
           "type": "string"
         },
         "enabled": {
@@ -1259,21 +1322,26 @@
           "type": "array"
         },
         "exporting": {
+          "description": "The pattern for exporting parameters",
           "type": "string"
         },
         "ignoreExceptions": {
+          "description": "Ignore parameters in methods of exception classes",
           "type": "boolean"
         },
         "ignoreNames": {
+          "description": "The following parameter names will be ignored",
           "items": {
             "type": "string"
           },
           "type": "array"
         },
         "importing": {
+          "description": "The pattern for importing parameters",
           "type": "string"
         },
         "returning": {
+          "description": "The pattern for returning parameters",
           "type": "string"
         }
       },
@@ -1291,6 +1359,7 @@
     },
     "MixReturningConf": {
       "additionalProperties": false,
+      "description": "Checks that methods don't have a mixture of returning and exporting/changing parameters",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1310,8 +1379,10 @@
     },
     "NestingConf": {
       "additionalProperties": false,
+      "description": "Checks for methods exceeding a maximum nesting depth",
       "properties": {
         "depth": {
+          "description": "Maximum allowed nesting depth",
           "type": "number"
         },
         "enabled": {
@@ -1333,6 +1404,7 @@
     },
     "NoPublicAttributesConf": {
       "additionalProperties": false,
+      "description": "Checks that classes don't contain any public attributes",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1352,23 +1424,29 @@
     },
     "ObjectNamingConf": {
       "additionalProperties": false,
+      "description": "Allows you to enforce a pattern, such as a prefix, for object names",
       "properties": {
         "auth": {
+          "description": "The pattern for authorization object names",
           "type": "string"
         },
         "clas": {
+          "description": "The pattern for global class names",
           "type": "string"
         },
         "doma": {
+          "description": "The pattern for domain names",
           "type": "string"
         },
         "dtel": {
+          "description": "The pattern for data element names",
           "type": "string"
         },
         "enabled": {
           "type": "boolean"
         },
         "enqu": {
+          "description": "The pattern for lock object names",
           "type": "string"
         },
         "exclude": {
@@ -1378,30 +1456,39 @@
           "type": "array"
         },
         "fugr": {
+          "description": "The pattern for function group names",
           "type": "string"
         },
         "idoc": {
+          "description": "The pattern for idoc names",
           "type": "string"
         },
         "intf": {
+          "description": "The pattern for global interface names",
           "type": "string"
         },
         "msag": {
+          "description": "The pattern for message class names",
           "type": "string"
         },
         "pinf": {
+          "description": "The pattern for package interface names",
           "type": "string"
         },
         "prog": {
+          "description": "The pattern for program (report) names",
           "type": "string"
         },
         "tabl": {
+          "description": "The pattern for DDIC table names",
           "type": "string"
         },
         "tran": {
+          "description": "The pattern for transaction names",
           "type": "string"
         },
         "ttyp": {
+          "description": "The pattern for DDIC table type names",
           "type": "string"
         }
       },
@@ -1427,6 +1514,7 @@
     },
     "ObsoleteStatementConf": {
       "additionalProperties": false,
+      "description": "Checks for usages of certain obsolete statements",
       "properties": {
         "add": {
           "type": "boolean"
@@ -1456,6 +1544,7 @@
           "type": "boolean"
         },
         "requested": {
+          "description": "Checks for usages of IS REQUESTED",
           "type": "boolean"
         },
         "subtract": {
@@ -1478,6 +1567,7 @@
     },
     "ParserErrorConf": {
       "additionalProperties": false,
+      "description": "Checks for syntax unrecognized by abaplint",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1497,8 +1587,10 @@
     },
     "PreferredCompareOperatorConf": {
       "additionalProperties": false,
+      "description": "Configure undesired operator variants",
       "properties": {
         "badOperators": {
+          "description": "Operators which are not allowed",
           "items": {
             "type": "string"
           },
@@ -1523,6 +1615,7 @@
     },
     "RemoveDescriptionsConf": {
       "additionalProperties": false,
+      "description": "Ensures you have no descriptions in metadata of methods, parameters, etc. For class descriptions, see rule description_empty.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1546,6 +1639,7 @@
     },
     "SequentialBlankConf": {
       "additionalProperties": false,
+      "description": "Checks that code does not contain more than the configured number of blank lines in a row.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1557,6 +1651,7 @@
           "type": "array"
         },
         "lines": {
+          "description": "The maximum number of allowed blank lines in a row",
           "type": "number"
         }
       },
@@ -1569,6 +1664,7 @@
     },
     "SevenBitAsciiConf": {
       "additionalProperties": false,
+      "description": "Only allow characters from the 7bit ASCII set.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1588,6 +1684,7 @@
     },
     "ShortCaseConf": {
       "additionalProperties": false,
+      "description": "Checks for CASE statements which have fewer than the specified number of branches",
       "properties": {
         "allow": {
           "items": {
@@ -1605,6 +1702,7 @@
           "type": "array"
         },
         "length": {
+          "description": "Minimum number of branches",
           "type": "number"
         }
       },
@@ -1618,6 +1716,7 @@
     },
     "SpaceBeforeColonConf": {
       "additionalProperties": false,
+      "description": "Checks that there are no spaces in front of colons in chained statements.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1637,6 +1736,7 @@
     },
     "SpaceBeforeDotConf": {
       "additionalProperties": false,
+      "description": "Checks for extra spaces before dots at the ends of statements .",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1664,6 +1764,7 @@
     },
     "StartAtTabConf": {
       "additionalProperties": false,
+      "description": "Checks that statements start at tabstops.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1683,6 +1784,7 @@
     },
     "SuperclassFinalConf": {
       "additionalProperties": false,
+      "description": "Checks that classes which are inherited from are not declared as FINAL.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1702,6 +1804,7 @@
     },
     "TABLEnhancementCategoryConf": {
       "additionalProperties": false,
+      "description": "Checks that tables do not have the enhancement category 'not classified'",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1721,6 +1824,7 @@
     },
     "TypeFormParametersConf": {
       "additionalProperties": false,
+      "description": "Checks for untyped FORM parameters",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1740,6 +1844,7 @@
     },
     "UnreachableCodeConf": {
       "additionalProperties": false,
+      "description": "Checks for unreachable code.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1759,6 +1864,7 @@
     },
     "UseNewConf": {
       "additionalProperties": false,
+      "description": "Checks for deprecated CREATE OBJECT statements.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1778,6 +1884,7 @@
     },
     "WhenOthersLastConf": {
       "additionalProperties": false,
+      "description": "Checks that WHEN OTHERS is placed the last within a CASE statement.",
       "properties": {
         "enabled": {
           "type": "boolean"
@@ -1797,6 +1904,7 @@
     },
     "WhitespaceEndConf": {
       "additionalProperties": false,
+      "description": "Checks for redundant whitespace at the end of each line.",
       "properties": {
         "enabled": {
           "type": "boolean"
