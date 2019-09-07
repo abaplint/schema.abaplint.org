@@ -25,8 +25,7 @@
         }
       },
       "required": [
-        "allowed",
-        "enabled"
+        "allowed"
       ],
       "type": "object"
     },
@@ -46,9 +45,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "AvoidUseConf": {
@@ -92,12 +88,11 @@
         }
       },
       "required": [
-        "communication",
         "define",
-        "enabled",
         "endselect",
         "execSQL",
         "kernelCall",
+        "communication",
         "statics"
       ],
       "type": "object"
@@ -117,9 +112,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "BreakpointConf": {
@@ -138,9 +130,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "CheckTransformationExistsConf": {
@@ -159,9 +148,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "CheckVariablesConf": {
@@ -180,9 +166,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "ClassAttributeNamesConf": {
@@ -213,10 +196,9 @@
         }
       },
       "required": [
-        "enabled",
         "ignoreExceptions",
-        "instance",
-        "statics"
+        "statics",
+        "instance"
       ],
       "type": "object"
     },
@@ -236,9 +218,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "ColonMissingSpaceConf": {
@@ -257,9 +236,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "CommentedCodeConf": {
@@ -278,9 +254,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "ConstructorVisibilityPublicConf": {
@@ -299,9 +272,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "ContainsTabConf": {
@@ -320,9 +290,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "DefinitionsTopConf": {
@@ -341,9 +308,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "DescriptionEmptyConf": {
@@ -362,9 +326,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "DoubleSpaceConf": {
@@ -393,10 +354,9 @@
         }
       },
       "required": [
-        "enabled",
-        "endParen",
         "keywords",
-        "startParen"
+        "startParen",
+        "endParen"
       ],
       "type": "object"
     },
@@ -420,8 +380,7 @@
         }
       },
       "required": [
-        "allowChained",
-        "enabled"
+        "allowChained"
       ],
       "type": "object"
     },
@@ -441,9 +400,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "EmptyStructureConf": {
@@ -491,14 +447,13 @@
         }
       },
       "required": [
-        "at",
-        "case",
-        "do",
-        "enabled",
-        "if",
         "loop",
+        "if",
+        "while",
+        "case",
         "select",
-        "while"
+        "do",
+        "at"
       ],
       "type": "object"
     },
@@ -518,9 +473,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "ExportingConf": {
@@ -539,9 +491,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "FormTablesObsoleteConf": {
@@ -560,9 +509,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "FunctionalWritingConf": {
@@ -585,7 +531,6 @@
         }
       },
       "required": [
-        "enabled",
         "ignoreExceptions"
       ],
       "type": "object"
@@ -606,9 +551,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "IConfig": {
@@ -922,9 +864,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "IfInIfConf": {
@@ -943,9 +882,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "ImplementMethodsConf": {
@@ -964,9 +900,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "InStatementIndentationConf": {
@@ -989,7 +922,6 @@
         }
       },
       "required": [
-        "enabled",
         "ignoreExceptions"
       ],
       "type": "object"
@@ -1025,10 +957,9 @@
         }
       },
       "required": [
-        "alignTryCatch",
-        "enabled",
-        "globalClassSkipFirst",
         "ignoreExceptions",
+        "alignTryCatch",
+        "globalClassSkipFirst",
         "ignoreGlobalClassDefinition",
         "ignoreGlobalInterface"
       ],
@@ -1050,9 +981,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "KeywordsUpperConf": {
@@ -1087,12 +1015,11 @@
         }
       },
       "required": [
-        "enabled",
         "ignoreExceptions",
-        "ignoreFunctionModuleName",
+        "ignoreLowerClassImplmentationStatement",
         "ignoreGlobalClassDefinition",
         "ignoreGlobalInterface",
-        "ignoreLowerClassImplmentationStatement"
+        "ignoreFunctionModuleName"
       ],
       "type": "object"
     },
@@ -1117,7 +1044,6 @@
         }
       },
       "required": [
-        "enabled",
         "length"
       ],
       "type": "object"
@@ -1142,7 +1068,6 @@
         }
       },
       "required": [
-        "enabled",
         "ignoreExceptions"
       ],
       "type": "object"
@@ -1172,7 +1097,6 @@
         }
       },
       "required": [
-        "enabled",
         "local",
         "test"
       ],
@@ -1194,9 +1118,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "LocalVariableNamesConf": {
@@ -1228,9 +1149,8 @@
         }
       },
       "required": [
-        "enabled",
-        "expectedConstant",
         "expectedData",
+        "expectedConstant",
         "expectedFS"
       ],
       "type": "object"
@@ -1251,9 +1171,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "MainFileContentsConf": {
@@ -1272,9 +1189,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "MaxOneStatementConf": {
@@ -1293,9 +1207,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "MessageExistsConf": {
@@ -1314,9 +1225,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "MethodLengthConf": {
@@ -1340,7 +1248,6 @@
         }
       },
       "required": [
-        "enabled",
         "statements"
       ],
       "type": "object"
@@ -1389,13 +1296,12 @@
         }
       },
       "required": [
-        "changing",
-        "enabled",
-        "exporting",
         "ignoreExceptions",
-        "ignoreNames",
         "importing",
-        "returning"
+        "returning",
+        "changing",
+        "exporting",
+        "ignoreNames"
       ],
       "type": "object"
     },
@@ -1415,9 +1321,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "NestingConf": {
@@ -1441,8 +1344,7 @@
         }
       },
       "required": [
-        "depth",
-        "enabled"
+        "depth"
       ],
       "type": "object"
     },
@@ -1462,9 +1364,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "ObjectNamingConf": {
@@ -1540,21 +1439,20 @@
         }
       },
       "required": [
-        "auth",
         "clas",
-        "doma",
-        "dtel",
-        "enabled",
-        "enqu",
-        "fugr",
-        "idoc",
         "intf",
-        "msag",
-        "pinf",
         "prog",
+        "fugr",
         "tabl",
+        "ttyp",
+        "dtel",
+        "doma",
+        "msag",
         "tran",
-        "ttyp"
+        "enqu",
+        "auth",
+        "pinf",
+        "idoc"
       ],
       "type": "object"
     },
@@ -1600,15 +1498,14 @@
         }
       },
       "required": [
-        "add",
-        "compute",
-        "divide",
-        "enabled",
-        "move",
-        "multiply",
         "refresh",
-        "requested",
-        "subtract"
+        "compute",
+        "add",
+        "subtract",
+        "multiply",
+        "move",
+        "divide",
+        "requested"
       ],
       "type": "object"
     },
@@ -1628,9 +1525,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "PreferredCompareOperatorConf": {
@@ -1657,8 +1551,7 @@
         }
       },
       "required": [
-        "badOperators",
-        "enabled"
+        "badOperators"
       ],
       "type": "object"
     },
@@ -1682,7 +1575,6 @@
         }
       },
       "required": [
-        "enabled",
         "ignoreExceptions"
       ],
       "type": "object"
@@ -1708,7 +1600,6 @@
         }
       },
       "required": [
-        "enabled",
         "lines"
       ],
       "type": "object"
@@ -1729,9 +1620,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "ShortCaseConf": {
@@ -1761,9 +1649,8 @@
         }
       },
       "required": [
-        "allow",
-        "enabled",
-        "length"
+        "length",
+        "allow"
       ],
       "type": "object"
     },
@@ -1783,9 +1670,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "SpaceBeforeDotConf": {
@@ -1811,9 +1695,8 @@
         }
       },
       "required": [
-        "enabled",
-        "ignoreExceptions",
-        "ignoreGlobalDefinition"
+        "ignoreGlobalDefinition",
+        "ignoreExceptions"
       ],
       "type": "object"
     },
@@ -1833,9 +1716,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "SuperclassFinalConf": {
@@ -1854,9 +1734,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "TABLEnhancementCategoryConf": {
@@ -1875,9 +1752,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "TypeFormParametersConf": {
@@ -1896,9 +1770,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "UnreachableCodeConf": {
@@ -1917,9 +1788,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "UseNewConf": {
@@ -1938,9 +1806,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "WhenOthersLastConf": {
@@ -1959,9 +1824,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     },
     "WhitespaceEndConf": {
@@ -1980,9 +1842,6 @@
           "type": "array"
         }
       },
-      "required": [
-        "enabled"
-      ],
       "type": "object"
     }
   }
