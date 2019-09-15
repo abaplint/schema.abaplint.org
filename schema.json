@@ -569,196 +569,644 @@
           "additionalProperties": false,
           "properties": {
             "7bit_ascii": {
-              "$ref": "#/definitions/SevenBitAsciiConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/SevenBitAsciiConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "allowed_object_types": {
-              "$ref": "#/definitions/AllowedObjectTypesConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/AllowedObjectTypesConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "ambiguous_statement": {
-              "$ref": "#/definitions/AmbiguousStatementConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/AmbiguousStatementConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "avoid_use": {
-              "$ref": "#/definitions/AvoidUseConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/AvoidUseConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "begin_end_names": {
-              "$ref": "#/definitions/BeginEndNamesConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/BeginEndNamesConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "breakpoint": {
-              "$ref": "#/definitions/BreakpointConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/BreakpointConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "check_transformation_exists": {
-              "$ref": "#/definitions/CheckTransformationExistsConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/CheckTransformationExistsConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "check_variables": {
-              "$ref": "#/definitions/CheckVariablesConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/CheckVariablesConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "class_attribute_names": {
-              "$ref": "#/definitions/ClassAttributeNamesConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/ClassAttributeNamesConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "cloud_types": {
-              "$ref": "#/definitions/CloudTypesConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/CloudTypesConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "colon_missing_space": {
-              "$ref": "#/definitions/ColonMissingSpaceConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/ColonMissingSpaceConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "commented_code": {
-              "$ref": "#/definitions/CommentedCodeConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/CommentedCodeConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "constructor_visibility_public": {
-              "$ref": "#/definitions/ConstructorVisibilityPublicConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/ConstructorVisibilityPublicConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "contains_tab": {
-              "$ref": "#/definitions/ContainsTabConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/ContainsTabConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "definitions_top": {
-              "$ref": "#/definitions/DefinitionsTopConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/DefinitionsTopConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "description_empty": {
-              "$ref": "#/definitions/DescriptionEmptyConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/DescriptionEmptyConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "double_space": {
-              "$ref": "#/definitions/DoubleSpaceConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/DoubleSpaceConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "empty_line_in_statement": {
-              "$ref": "#/definitions/EmptyLineinStatementConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/EmptyLineinStatementConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "empty_statement": {
-              "$ref": "#/definitions/EmptyStatementConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/EmptyStatementConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "empty_structure": {
-              "$ref": "#/definitions/EmptyStructureConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/EmptyStructureConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "exit_or_check": {
-              "$ref": "#/definitions/ExitOrCheckConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/ExitOrCheckConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "exporting": {
-              "$ref": "#/definitions/ExportingConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/ExportingConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "form_tables_obsolete": {
-              "$ref": "#/definitions/FormTablesObsoleteConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/FormTablesObsoleteConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "functional_writing": {
-              "$ref": "#/definitions/FunctionalWritingConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/FunctionalWritingConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "global_class": {
-              "$ref": "#/definitions/GlobalClassConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/GlobalClassConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "identical_form_names": {
-              "$ref": "#/definitions/IdenticalFormNamesConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/IdenticalFormNamesConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "if_in_if": {
-              "$ref": "#/definitions/IfInIfConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/IfInIfConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "implement_methods": {
-              "$ref": "#/definitions/ImplementMethodsConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/ImplementMethodsConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "in_statement_indentation": {
-              "$ref": "#/definitions/InStatementIndentationConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/InStatementIndentationConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "indentation": {
-              "$ref": "#/definitions/IndentationConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/IndentationConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "inline_data_old_versions": {
-              "$ref": "#/definitions/InlineDataOldVersionsConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/InlineDataOldVersionsConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "keywords_upper": {
-              "$ref": "#/definitions/KeywordsUpperConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/KeywordsUpperConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "line_length": {
-              "$ref": "#/definitions/LineLengthConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/LineLengthConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "line_only_punc": {
-              "$ref": "#/definitions/LineOnlyPuncConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/LineOnlyPuncConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "local_class_naming": {
-              "$ref": "#/definitions/LocalClassNamingConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/LocalClassNamingConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "local_testclass_location": {
-              "$ref": "#/definitions/LocalTestclassLocationConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/LocalTestclassLocationConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "local_variable_names": {
-              "$ref": "#/definitions/LocalVariableNamesConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/LocalVariableNamesConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "main_file_contents": {
-              "$ref": "#/definitions/MainFileContentsConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/MainFileContentsConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "max_one_statement": {
-              "$ref": "#/definitions/MaxOneStatementConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/MaxOneStatementConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "message_exists": {
-              "$ref": "#/definitions/MessageExistsConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/MessageExistsConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "method_length": {
-              "$ref": "#/definitions/MethodLengthConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/MethodLengthConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "method_parameter_names": {
-              "$ref": "#/definitions/MethodParameterNamesConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/MethodParameterNamesConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "mix_returning": {
-              "$ref": "#/definitions/MixReturningConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/MixReturningConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "msag_consistency": {
-              "$ref": "#/definitions/MSAGConsistencyConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/MSAGConsistencyConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "nesting": {
-              "$ref": "#/definitions/NestingConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/NestingConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "no_public_attributes": {
-              "$ref": "#/definitions/NoPublicAttributesConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/NoPublicAttributesConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "object_naming": {
-              "$ref": "#/definitions/ObjectNamingConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/ObjectNamingConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "obsolete_statement": {
-              "$ref": "#/definitions/ObsoleteStatementConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/ObsoleteStatementConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "parser_error": {
-              "$ref": "#/definitions/ParserErrorConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/ParserErrorConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "preferred_compare_operator": {
-              "$ref": "#/definitions/PreferredCompareOperatorConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/PreferredCompareOperatorConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "remove_descriptions": {
-              "$ref": "#/definitions/RemoveDescriptionsConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/RemoveDescriptionsConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "rfc_error_handling": {
-              "$ref": "#/definitions/RFCErrorHandlingConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/RFCErrorHandlingConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "sequential_blank": {
-              "$ref": "#/definitions/SequentialBlankConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/SequentialBlankConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "short_case": {
-              "$ref": "#/definitions/ShortCaseConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/ShortCaseConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "space_before_colon": {
-              "$ref": "#/definitions/SpaceBeforeColonConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/SpaceBeforeColonConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "space_before_dot": {
-              "$ref": "#/definitions/SpaceBeforeDotConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/SpaceBeforeDotConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "start_at_tab": {
-              "$ref": "#/definitions/StartAtTabConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/StartAtTabConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "superclass_final": {
-              "$ref": "#/definitions/SuperclassFinalConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/SuperclassFinalConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "tabl_enhancement_category": {
-              "$ref": "#/definitions/TABLEnhancementCategoryConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/TABLEnhancementCategoryConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "type_form_parameters": {
-              "$ref": "#/definitions/TypeFormParametersConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/TypeFormParametersConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "unreachable_code": {
-              "$ref": "#/definitions/UnreachableCodeConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/UnreachableCodeConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "use_new": {
-              "$ref": "#/definitions/UseNewConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/UseNewConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "when_others_last": {
-              "$ref": "#/definitions/WhenOthersLastConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/WhenOthersLastConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             },
             "whitespace_end": {
-              "$ref": "#/definitions/WhitespaceEndConf"
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/WhitespaceEndConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
             }
           },
           "type": "object"
