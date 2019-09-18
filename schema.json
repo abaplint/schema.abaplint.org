@@ -2064,7 +2064,7 @@
           "type": "array"
         },
         "lines": {
-          "description": "The maximum number of allowed blank lines in a row",
+          "description": "An equal or higher number of sequential blank lines will trigger a violation.\nExample: if lines = 3, a maximum of 2 is allowed.",
           "type": "number"
         }
       },
@@ -2113,7 +2113,7 @@
           "type": "array"
         },
         "length": {
-          "description": "Minimum number of branches",
+          "description": "The smallest number of WHEN branches which will trigger a violation.\nExample: if length = 1, at least 2 branches are required",
           "type": "number"
         }
       },
