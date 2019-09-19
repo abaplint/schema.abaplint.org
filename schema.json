@@ -1164,6 +1164,16 @@
                 }
               ]
             },
+            "release_idoc": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/ReleaseIdocConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
+            },
             "remove_descriptions": {
               "anyOf": [
                 {
@@ -2205,6 +2215,28 @@
     "RFCErrorHandlingConf": {
       "additionalProperties": false,
       "description": "Checks that exceptions 'system_failure' and 'communication_failure' are handled in RFC calls",
+      "properties": {
+        "enabled": {
+          "description": "Is the rule enabled?",
+          "type": "boolean"
+        },
+        "exclude": {
+          "description": "List of patterns to exclude",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "ReleaseIdocConf": {
+      "additionalProperties": false,
+      "description": "Checks idoc types and segments are set to status released",
       "properties": {
         "enabled": {
           "description": "Is the rule enabled?",
