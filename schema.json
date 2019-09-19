@@ -22,6 +22,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "required": [
@@ -43,6 +47,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -82,6 +90,10 @@
           "description": "Detects kernel calls",
           "type": "boolean"
         },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
+        },
         "statics": {
           "description": "Detects statics",
           "type": "boolean"
@@ -110,6 +122,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -128,6 +144,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -146,6 +166,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -164,6 +188,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -188,6 +216,10 @@
         },
         "instance": {
           "description": "The pattern for instance variable names",
+          "type": "string"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
           "type": "string"
         },
         "statics": {
@@ -216,6 +248,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -234,6 +270,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -252,6 +292,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -270,6 +314,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -288,6 +336,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -306,6 +358,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -324,6 +380,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -348,6 +408,10 @@
         },
         "keywords": {
           "type": "boolean"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         },
         "startParen": {
           "type": "boolean"
@@ -377,6 +441,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "required": [
@@ -398,6 +466,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -437,6 +509,10 @@
           "description": "Checks for empty loop blocks",
           "type": "boolean"
         },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
+        },
         "select": {
           "description": "Checks for empty select blockss",
           "type": "boolean"
@@ -471,6 +547,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -489,6 +569,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -507,6 +591,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -528,6 +616,10 @@
         },
         "ignoreExceptions": {
           "type": "boolean"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "required": [
@@ -549,6 +641,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -1313,6 +1409,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -1331,6 +1431,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -1349,6 +1453,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -1370,6 +1478,10 @@
         },
         "ignoreExceptions": {
           "type": "boolean"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "required": [
@@ -1405,6 +1517,10 @@
         },
         "ignoreGlobalInterface": {
           "type": "boolean"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "required": [
@@ -1430,6 +1546,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -1463,6 +1583,10 @@
         },
         "ignoreLowerClassImplmentationStatement": {
           "type": "boolean"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "required": [
@@ -1492,6 +1616,10 @@
         "length": {
           "description": "Maximum line length in characters",
           "type": "number"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "required": [
@@ -1516,6 +1644,10 @@
         },
         "ignoreExceptions": {
           "type": "boolean"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "required": [
@@ -1540,6 +1672,10 @@
         },
         "local": {
           "description": "The pattern for local class names",
+          "type": "string"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
           "type": "string"
         },
         "test": {
@@ -1567,6 +1703,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -1597,6 +1737,10 @@
         "expectedFS": {
           "description": "The pattern for field symbol names",
           "type": "string"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "required": [
@@ -1620,6 +1764,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -1638,6 +1786,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -1656,6 +1808,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -1674,6 +1830,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -1692,6 +1852,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         },
         "statements": {
           "description": "Maximum method length in statements",
@@ -1741,6 +1905,10 @@
           "description": "The pattern for importing parameters",
           "type": "string"
         },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
+        },
         "returning": {
           "description": "The pattern for returning parameters",
           "type": "string"
@@ -1770,6 +1938,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -1792,6 +1964,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "required": [
@@ -1813,6 +1989,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -1876,6 +2056,10 @@
           "description": "The pattern for program (report) names",
           "type": "string"
         },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
+        },
         "tabl": {
           "description": "The pattern for DDIC table names",
           "type": "string"
@@ -1937,6 +2121,10 @@
         "multiply": {
           "type": "boolean"
         },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
+        },
         "refresh": {
           "type": "boolean"
         },
@@ -1974,6 +2162,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -1999,6 +2191,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "required": [
@@ -2020,6 +2216,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -2041,6 +2241,10 @@
         },
         "ignoreExceptions": {
           "type": "boolean"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "required": [
@@ -2066,6 +2270,10 @@
         "lines": {
           "description": "An equal or higher number of sequential blank lines will trigger a violation.\nExample: if lines = 3, a maximum of 2 is allowed.",
           "type": "number"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "required": [
@@ -2087,6 +2295,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -2115,6 +2327,10 @@
         "length": {
           "description": "The smallest number of WHEN branches which will trigger a violation.\nExample: if length = 1, at least 2 branches are required",
           "type": "number"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "required": [
@@ -2137,6 +2353,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -2161,6 +2381,10 @@
         },
         "ignoreGlobalDefinition": {
           "type": "boolean"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "required": [
@@ -2183,6 +2407,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -2201,6 +2429,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -2219,6 +2451,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -2237,6 +2473,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -2255,6 +2495,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -2273,6 +2517,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -2291,6 +2539,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
@@ -2309,6 +2561,10 @@
             "type": "string"
           },
           "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "type": "object"
