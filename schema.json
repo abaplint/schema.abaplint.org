@@ -1566,7 +1566,7 @@
     },
     "KeywordsUpperConf": {
       "additionalProperties": false,
-      "description": "Detects keywords which are not uppercased.",
+      "description": "Detects keywords which are not uppercased, non-keywords must be lower case.",
       "properties": {
         "enabled": {
           "description": "Is the rule enabled?",
