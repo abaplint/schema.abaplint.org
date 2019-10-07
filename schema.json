@@ -577,6 +577,28 @@
       },
       "type": "object"
     },
+    "FormNoDashConf": {
+      "additionalProperties": false,
+      "description": "Checks for a Dash in form names.",
+      "properties": {
+        "enabled": {
+          "description": "Is the rule enabled?",
+          "type": "boolean"
+        },
+        "exclude": {
+          "description": "List of patterns to exclude",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
     "FormTablesObsoleteConf": {
       "additionalProperties": false,
       "description": "Checks for TABLES parameters in forms.",
@@ -878,6 +900,16 @@
               "anyOf": [
                 {
                   "$ref": "#/definitions/ExportingConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
+            },
+            "form_no_dash": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/FormNoDashConf"
                 },
                 {
                   "type": "boolean"
