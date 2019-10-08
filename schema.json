@@ -200,30 +200,27 @@
       "additionalProperties": false,
       "description": "Allows you to enforce a pattern, such as a prefix, for class variable names.",
       "properties": {
-        "ignoreExceptions": {
+        "enabled": {
+          "description": "Is the rule enabled?",
           "type": "boolean"
         },
-        "ignoreNames": {
-          "description": "A list of names to be ignored",
+        "exclude": {
+          "description": "List of patterns to exclude",
           "items": {
             "type": "string"
           },
           "type": "array"
         },
-        "ignorePatterns": {
-          "description": "A list of patterns to be ignored. For example, you can use it to ignore ambiguous prefixes",
-          "items": {
-            "type": "string"
-          },
-          "type": "array"
+        "ignoreExceptions": {
+          "type": "boolean"
         },
         "instance": {
           "description": "The pattern for instance variable names",
           "type": "string"
         },
-        "patternKind": {
-          "$ref": "#/definitions/PatternKind",
-          "description": "Specifies whether the pattern is forbidden (violation if name matches) or required (violation if name does not match)."
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         },
         "statics": {
           "description": "The pattern for static variable names",
@@ -1704,15 +1701,12 @@
       "additionalProperties": false,
       "description": "Allows you to enforce a pattern, such as a prefix, for local class names.",
       "properties": {
-        "ignoreNames": {
-          "description": "A list of names to be ignored",
-          "items": {
-            "type": "string"
-          },
-          "type": "array"
+        "enabled": {
+          "description": "Is the rule enabled?",
+          "type": "boolean"
         },
-        "ignorePatterns": {
-          "description": "A list of patterns to be ignored. For example, you can use it to ignore ambiguous prefixes",
+        "exclude": {
+          "description": "List of patterns to exclude",
           "items": {
             "type": "string"
           },
@@ -1722,9 +1716,9 @@
           "description": "The pattern for local class names",
           "type": "string"
         },
-        "patternKind": {
-          "$ref": "#/definitions/PatternKind",
-          "description": "Specifies whether the pattern is forbidden (violation if name matches) or required (violation if name does not match)."
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         },
         "test": {
           "description": "The pattern for local test class names",
@@ -1763,6 +1757,17 @@
       "additionalProperties": false,
       "description": "Allows you to enforce a pattern, such as a prefix, for local variables, constants and field symbols.",
       "properties": {
+        "enabled": {
+          "description": "Is the rule enabled?",
+          "type": "boolean"
+        },
+        "exclude": {
+          "description": "List of patterns to exclude",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
         "expectedConstant": {
           "description": "The pattern for local constant names",
           "type": "string"
@@ -1775,23 +1780,9 @@
           "description": "The pattern for field symbol names",
           "type": "string"
         },
-        "ignoreNames": {
-          "description": "A list of names to be ignored",
-          "items": {
-            "type": "string"
-          },
-          "type": "array"
-        },
-        "ignorePatterns": {
-          "description": "A list of patterns to be ignored. For example, you can use it to ignore ambiguous prefixes",
-          "items": {
-            "type": "string"
-          },
-          "type": "array"
-        },
-        "patternKind": {
-          "$ref": "#/definitions/PatternKind",
-          "description": "Specifies whether the pattern is forbidden (violation if name matches) or required (violation if name does not match)."
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "required": [
@@ -1926,6 +1917,17 @@
           "description": "The pattern for changing parameters",
           "type": "string"
         },
+        "enabled": {
+          "description": "Is the rule enabled?",
+          "type": "boolean"
+        },
+        "exclude": {
+          "description": "List of patterns to exclude",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
         "exporting": {
           "description": "The pattern for exporting parameters",
           "type": "string"
@@ -1935,14 +1937,7 @@
           "type": "boolean"
         },
         "ignoreNames": {
-          "description": "A list of names to be ignored",
-          "items": {
-            "type": "string"
-          },
-          "type": "array"
-        },
-        "ignorePatterns": {
-          "description": "A list of patterns to be ignored. For example, you can use it to ignore ambiguous prefixes",
+          "description": "The following parameter names will be ignored",
           "items": {
             "type": "string"
           },
@@ -1952,9 +1947,9 @@
           "description": "The pattern for importing parameters",
           "type": "string"
         },
-        "patternKind": {
-          "$ref": "#/definitions/PatternKind",
-          "description": "Specifies whether the pattern is forbidden (violation if name matches) or required (violation if name does not match)."
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         },
         "returning": {
           "description": "The pattern for returning parameters",
@@ -1966,7 +1961,8 @@
         "importing",
         "returning",
         "changing",
-        "exporting"
+        "exporting",
+        "ignoreNames"
       ],
       "type": "object"
     },
@@ -2063,9 +2059,20 @@
           "description": "The pattern for data element names",
           "type": "string"
         },
+        "enabled": {
+          "description": "Is the rule enabled?",
+          "type": "boolean"
+        },
         "enqu": {
           "description": "The pattern for lock object names",
           "type": "string"
+        },
+        "exclude": {
+          "description": "List of patterns to exclude",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
         },
         "fugr": {
           "description": "The pattern for function group names",
@@ -2075,20 +2082,6 @@
           "description": "The pattern for idoc names",
           "type": "string"
         },
-        "ignoreNames": {
-          "description": "A list of names to be ignored",
-          "items": {
-            "type": "string"
-          },
-          "type": "array"
-        },
-        "ignorePatterns": {
-          "description": "A list of patterns to be ignored. For example, you can use it to ignore ambiguous prefixes",
-          "items": {
-            "type": "string"
-          },
-          "type": "array"
-        },
         "intf": {
           "description": "The pattern for global interface names",
           "type": "string"
@@ -2097,16 +2090,16 @@
           "description": "The pattern for message class names",
           "type": "string"
         },
-        "patternKind": {
-          "$ref": "#/definitions/PatternKind",
-          "description": "Specifies whether the pattern is forbidden (violation if name matches) or required (violation if name does not match)."
-        },
         "pinf": {
           "description": "The pattern for package interface names",
           "type": "string"
         },
         "prog": {
           "description": "The pattern for program (report) names",
+          "type": "string"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
           "type": "string"
         },
         "tabl": {
@@ -2218,13 +2211,6 @@
         }
       },
       "type": "object"
-    },
-    "PatternKind": {
-      "enum": [
-        "required",
-        "forbidden"
-      ],
-      "type": "string"
     },
     "PreferredCompareOperatorConf": {
       "additionalProperties": false,
