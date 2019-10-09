@@ -200,6 +200,17 @@
       "additionalProperties": false,
       "description": "Allows you to enforce a pattern, such as a prefix, for class variable names.",
       "properties": {
+        "enabled": {
+          "description": "Is the rule enabled?",
+          "type": "boolean"
+        },
+        "exclude": {
+          "description": "List of patterns to exclude",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
         "ignoreExceptions": {
           "type": "boolean"
         },
@@ -224,6 +235,10 @@
         "patternKind": {
           "$ref": "#/definitions/PatternKind",
           "description": "Specifies whether the pattern is forbidden (violation if name matches) or required (violation if name does not match)."
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         },
         "statics": {
           "description": "The pattern for static variable names",
@@ -1704,6 +1719,17 @@
       "additionalProperties": false,
       "description": "Allows you to enforce a pattern, such as a prefix, for local class names.",
       "properties": {
+        "enabled": {
+          "description": "Is the rule enabled?",
+          "type": "boolean"
+        },
+        "exclude": {
+          "description": "List of patterns to exclude",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
         "ignoreNames": {
           "description": "A list of names to be ignored",
           "items": {
@@ -1725,6 +1751,10 @@
         "patternKind": {
           "$ref": "#/definitions/PatternKind",
           "description": "Specifies whether the pattern is forbidden (violation if name matches) or required (violation if name does not match)."
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         },
         "test": {
           "description": "The pattern for local test class names",
@@ -1763,6 +1793,17 @@
       "additionalProperties": false,
       "description": "Allows you to enforce a pattern, such as a prefix, for local variables, constants and field symbols.",
       "properties": {
+        "enabled": {
+          "description": "Is the rule enabled?",
+          "type": "boolean"
+        },
+        "exclude": {
+          "description": "List of patterns to exclude",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
         "expectedConstant": {
           "description": "The pattern for local constant names",
           "type": "string"
@@ -1792,6 +1833,10 @@
         "patternKind": {
           "$ref": "#/definitions/PatternKind",
           "description": "Specifies whether the pattern is forbidden (violation if name matches) or required (violation if name does not match)."
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         }
       },
       "required": [
@@ -1926,6 +1971,17 @@
           "description": "The pattern for changing parameters",
           "type": "string"
         },
+        "enabled": {
+          "description": "Is the rule enabled?",
+          "type": "boolean"
+        },
+        "exclude": {
+          "description": "List of patterns to exclude",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
         "exporting": {
           "description": "The pattern for exporting parameters",
           "type": "string"
@@ -1955,6 +2011,10 @@
         "patternKind": {
           "$ref": "#/definitions/PatternKind",
           "description": "Specifies whether the pattern is forbidden (violation if name matches) or required (violation if name does not match)."
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
         },
         "returning": {
           "description": "The pattern for returning parameters",
@@ -2063,9 +2123,20 @@
           "description": "The pattern for data element names",
           "type": "string"
         },
+        "enabled": {
+          "description": "Is the rule enabled?",
+          "type": "boolean"
+        },
         "enqu": {
           "description": "The pattern for lock object names",
           "type": "string"
+        },
+        "exclude": {
+          "description": "List of patterns to exclude",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
         },
         "fugr": {
           "description": "The pattern for function group names",
@@ -2107,6 +2178,10 @@
         },
         "prog": {
           "description": "The pattern for program (report) names",
+          "type": "string"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
           "type": "string"
         },
         "tabl": {
