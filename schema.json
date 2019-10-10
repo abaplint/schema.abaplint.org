@@ -415,6 +415,7 @@
           "type": "boolean"
         },
         "endParen": {
+          "description": "Check for double space before end parenthesis",
           "type": "boolean"
         },
         "exclude": {
@@ -425,6 +426,7 @@
           "type": "array"
         },
         "keywords": {
+          "description": "Check for double space after keywords",
           "type": "boolean"
         },
         "reason": {
@@ -432,6 +434,7 @@
           "type": "string"
         },
         "startParen": {
+          "description": "Check for double space after start parenthesis",
           "type": "boolean"
         }
       },
@@ -1630,6 +1633,7 @@
           "type": "array"
         },
         "ignoreExceptions": {
+          "description": "Ignore global exception classes",
           "type": "boolean"
         },
         "ignoreFunctionModuleName": {
