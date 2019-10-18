@@ -1972,10 +1972,14 @@
     },
     "MethodLengthConf": {
       "additionalProperties": false,
-      "description": "Chcecks that methods do not exceed the set number of statements",
+      "description": "Checks relating to method length.",
       "properties": {
         "enabled": {
           "description": "Is the rule enabled?",
+          "type": "boolean"
+        },
+        "errorWhenEmpty": {
+          "description": "Checks for empty methods.",
           "type": "boolean"
         },
         "exclude": {
@@ -1995,7 +1999,8 @@
         }
       },
       "required": [
-        "statements"
+        "statements",
+        "errorWhenEmpty"
       ],
       "type": "object"
     },
