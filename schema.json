@@ -386,7 +386,7 @@
     },
     "ContainsTabConf": {
       "additionalProperties": false,
-      "description": "Checks for usage of tabs (enable to enforce spaces).",
+      "description": "Checks for usage of tabs (enable to enforce spaces)",
       "properties": {
         "enabled": {
           "description": "Is the rule enabled?",
