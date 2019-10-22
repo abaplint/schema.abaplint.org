@@ -6,6 +6,10 @@
       "additionalProperties": false,
       "description": "Various checks regarding abapdoc. Base rule checks for existence of abapdoc for\npublic class methods and all interface methods.",
       "properties": {
+        "checkLocal": {
+          "description": "Check local classes and interfaces for abapdoc.",
+          "type": "boolean"
+        },
         "enabled": {
           "description": "Is the rule enabled?",
           "type": "boolean"
@@ -22,6 +26,9 @@
           "type": "string"
         }
       },
+      "required": [
+        "checkLocal"
+      ],
       "type": "object"
     },
     "AllowedObjectTypesConf": {
