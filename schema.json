@@ -181,6 +181,28 @@
       },
       "type": "object"
     },
+    "CheckDDICConf": {
+      "additionalProperties": false,
+      "description": "Checks the types of DDIC objects can be resolved, the namespace of the development/errors can be configured in \"errorNamespace\"",
+      "properties": {
+        "enabled": {
+          "description": "Is the rule enabled?",
+          "type": "boolean"
+        },
+        "exclude": {
+          "description": "List of patterns to exclude",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
     "CheckIncludeConf": {
       "additionalProperties": false,
       "description": "Checks INCLUDE statements",
@@ -822,6 +844,16 @@
               "anyOf": [
                 {
                   "$ref": "#/definitions/BreakpointConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
+            },
+            "check_ddic": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/CheckDDICConf"
                 },
                 {
                   "type": "boolean"
