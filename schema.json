@@ -1420,6 +1420,16 @@
                 }
               ]
             },
+            "type_begin_single_include": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/TypeBeginSingleTypeConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
+            },
             "type_form_parameters": {
               "anyOf": [
                 {
@@ -2705,6 +2715,28 @@
     "TABLEnhancementCategoryConf": {
       "additionalProperties": false,
       "description": "Checks that tables do not have the enhancement category 'not classified'",
+      "properties": {
+        "enabled": {
+          "description": "Is the rule enabled?",
+          "type": "boolean"
+        },
+        "exclude": {
+          "description": "List of patterns to exclude",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "TypeBeginSingleTypeConf": {
+      "additionalProperties": false,
+      "description": "Finds TYPE BEGIN with just one INCLUDE TYPE",
       "properties": {
         "enabled": {
           "description": "Is the rule enabled?",
