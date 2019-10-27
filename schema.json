@@ -225,9 +225,9 @@
       },
       "type": "object"
     },
-    "CheckTransformationExistsConf": {
+    "CheckSyntaxConf": {
       "additionalProperties": false,
-      "description": "Checks that used XSLT transformations exist.",
+      "description": "Enables syntax check and variable resolution",
       "properties": {
         "enabled": {
           "description": "Is the rule enabled?",
@@ -247,9 +247,9 @@
       },
       "type": "object"
     },
-    "CheckVariablesConf": {
+    "CheckTransformationExistsConf": {
       "additionalProperties": false,
-      "description": "Enables variable resolution",
+      "description": "Checks that used XSLT transformations exist.",
       "properties": {
         "enabled": {
           "description": "Is the rule enabled?",
@@ -870,20 +870,20 @@
                 }
               ]
             },
-            "check_transformation_exists": {
+            "check_syntax": {
               "anyOf": [
                 {
-                  "$ref": "#/definitions/CheckTransformationExistsConf"
+                  "$ref": "#/definitions/CheckSyntaxConf"
                 },
                 {
                   "type": "boolean"
                 }
               ]
             },
-            "check_variables": {
+            "check_transformation_exists": {
               "anyOf": [
                 {
-                  "$ref": "#/definitions/CheckVariablesConf"
+                  "$ref": "#/definitions/CheckTransformationExistsConf"
                 },
                 {
                   "type": "boolean"
