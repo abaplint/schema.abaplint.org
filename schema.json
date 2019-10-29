@@ -269,6 +269,28 @@
       },
       "type": "object"
     },
+    "CheckTextElementsConf": {
+      "additionalProperties": false,
+      "description": "Check text elements",
+      "properties": {
+        "enabled": {
+          "description": "Is the rule enabled?",
+          "type": "boolean"
+        },
+        "exclude": {
+          "description": "List of file regex patterns to exclude",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
     "CheckTransformationExistsConf": {
       "additionalProperties": false,
       "description": "Checks that used XSLT transformations exist.",
@@ -906,6 +928,16 @@
               "anyOf": [
                 {
                   "$ref": "#/definitions/CheckSyntaxConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
+            },
+            "check_text_elements": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/CheckTextElementsConf"
                 },
                 {
                   "type": "boolean"
