@@ -2431,6 +2431,10 @@
         "multiply": {
           "type": "boolean"
         },
+        "occurs": {
+          "description": "Checks for usages of OCCURS",
+          "type": "boolean"
+        },
         "reason": {
           "description": "An explanation for why the rule is enforced",
           "type": "string"
@@ -2454,7 +2458,8 @@
         "multiply",
         "move",
         "divide",
-        "requested"
+        "requested",
+        "occurs"
       ],
       "type": "object"
     },
