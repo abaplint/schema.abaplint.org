@@ -2269,8 +2269,12 @@
     },
     "NoPublicAttributesConf": {
       "additionalProperties": false,
-      "description": "Checks that classes don't contain any public attributes",
+      "description": "Checks that classes and interfaces don't contain any public attributes.\nExceptions are excluded from this rule.",
       "properties": {
+        "allowReadOnly": {
+          "description": "Allows public attributes, if they are declared as READ-ONLY.",
+          "type": "boolean"
+        },
         "enabled": {
           "description": "Is the rule enabled?",
           "type": "boolean"
@@ -2287,6 +2291,9 @@
           "type": "string"
         }
       },
+      "required": [
+        "allowReadOnly"
+      ],
       "type": "object"
     },
     "ObjectNamingConf": {
