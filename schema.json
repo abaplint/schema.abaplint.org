@@ -1504,6 +1504,16 @@
                 }
               ]
             },
+            "types_naming": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/TypesNamingConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
+            },
             "unreachable_code": {
               "anyOf": [
                 {
@@ -2852,6 +2862,35 @@
           "type": "string"
         }
       },
+      "type": "object"
+    },
+    "TypesNamingConf": {
+      "additionalProperties": false,
+      "description": "Allows you to enforce a pattern for TYPES definitions",
+      "properties": {
+        "enabled": {
+          "description": "Is the rule enabled?",
+          "type": "boolean"
+        },
+        "exclude": {
+          "description": "List of file regex patterns to exclude",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "pattern": {
+          "description": "The pattern for TYPES",
+          "type": "string"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
+        }
+      },
+      "required": [
+        "pattern"
+      ],
       "type": "object"
     },
     "UnreachableCodeConf": {
