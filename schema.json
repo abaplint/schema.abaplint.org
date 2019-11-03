@@ -203,6 +203,28 @@
       },
       "type": "object"
     },
+    "CheckAbstractConf": {
+      "additionalProperties": false,
+      "description": "Checks abstract methods and classes:\n- class defined as abstract and final,\n- non-abstract class contains abstract methods",
+      "properties": {
+        "enabled": {
+          "description": "Is the rule enabled?",
+          "type": "boolean"
+        },
+        "exclude": {
+          "description": "List of file regex patterns to exclude",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "reason": {
+          "description": "An explanation for why the rule is enforced",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
     "CheckDDICConf": {
       "additionalProperties": false,
       "description": "Checks the types of DDIC objects can be resolved, the namespace of the development/errors can be configured in \"errorNamespace\"",
@@ -898,6 +920,16 @@
               "anyOf": [
                 {
                   "$ref": "#/definitions/ChainMainlyDeclarationsConf"
+                },
+                {
+                  "type": "boolean"
+                }
+              ]
+            },
+            "check_abstract": {
+              "anyOf": [
+                {
+                  "$ref": "#/definitions/CheckAbstractConf"
                 },
                 {
                   "type": "boolean"
