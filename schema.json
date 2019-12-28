@@ -966,7 +966,8 @@
                 {
                   "type": "boolean"
                 }
-              ]
+              ],
+              "description": "moo"
             },
             "abapdoc": {
               "anyOf": [
