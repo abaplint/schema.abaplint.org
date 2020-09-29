@@ -1529,7 +1529,7 @@
                   "type": "boolean"
                 }
               ],
-              "description": "Detects usage of call method when functional style calls can be used.\nTags: Styleguide\nhttps://rules.abaplint.org/functional_writing"
+              "description": "Detects usage of call method when functional style calls can be used.\nTags: Styleguide, Quickfix\nhttps://rules.abaplint.org/functional_writing"
             },
             "global_class": {
               "anyOf": [
