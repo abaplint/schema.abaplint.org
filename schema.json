@@ -924,6 +924,12 @@
     "ExitOrCheckConf": {
       "additionalProperties": false,
       "properties": {
+        "allowCheck": {
+          "type": "boolean"
+        },
+        "allowExit": {
+          "type": "boolean"
+        },
         "exclude": {
           "description": "List of file regex filename patterns to exclude, case insensitive",
           "items": {
@@ -936,6 +942,10 @@
           "description": "Problem severity"
         }
       },
+      "required": [
+        "allowExit",
+        "allowCheck"
+      ],
       "type": "object"
     },
     "ExportingConf": {
