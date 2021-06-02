@@ -3845,6 +3845,10 @@
           },
           "type": "array"
         },
+        "exitFromSQL": {
+          "description": "Checks for EXIT FROM SQL",
+          "type": "boolean"
+        },
         "fieldSymbolStructure": {
           "description": "Checks for FIELD-SYMBOLS ... STRUCTURE",
           "type": "boolean"
@@ -3934,7 +3938,8 @@
         "communication",
         "pack",
         "selectWithoutInto",
-        "freeMemory"
+        "freeMemory",
+        "exitFromSQL"
       ],
       "type": "object"
     },
