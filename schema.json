@@ -2248,7 +2248,7 @@
                   "type": "boolean"
                 }
               ],
-              "description": "Prefer RAISE EXCEPTION NEW to RAISE EXCEPTION TYPE\nTags: Styleguide, SingleFile\nhttps://rules.abaplint.org/prefer_raise_exception_new"
+              "description": "Prefer RAISE EXCEPTION NEW to RAISE EXCEPTION TYPE\nTags: Styleguide, SingleFile, Quickfix\nhttps://rules.abaplint.org/prefer_raise_exception_new"
             },
             "prefer_returning_to_exporting": {
               "anyOf": [
