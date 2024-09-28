@@ -13,7 +13,17 @@
           "type": "array"
         },
         "input_folder": {
-          "type": "string"
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          ]
         },
         "lib": {
           "description": "to be deprecated, \"lib\"",
@@ -63,8 +73,6 @@
       "required": [
         "input_folder",
         "output_folder",
-        "write_unit_tests",
-        "write_source_map",
         "options"
       ],
       "type": "object"
