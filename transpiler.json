@@ -26,7 +26,8 @@
           ]
         },
         "lib": {
-          "description": "to be deprecated, \"lib\"",
+          "deprecated": true,
+          "description": "to be deprecated, \"lib\", use \"libs\" instead",
           "type": "string"
         },
         "libs": {
