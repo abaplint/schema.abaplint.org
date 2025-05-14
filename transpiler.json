@@ -58,6 +58,9 @@
           },
           "type": "array"
         },
+        "no_top_level_prog": {
+          "type": "boolean"
+        },
         "options": {
           "$ref": "#/definitions/ITranspilerOptions"
         },
