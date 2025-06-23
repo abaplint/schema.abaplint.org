@@ -101,6 +101,10 @@
           "description": "ignore syntax check, used for internal testing",
           "type": "boolean"
         },
+        "importProg": {
+          "description": "import programs",
+          "type": "boolean"
+        },
         "keywords": {
           "description": "list of keywords to rename, if not supplied default will be used",
           "items": {
