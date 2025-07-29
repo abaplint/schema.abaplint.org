@@ -141,6 +141,9 @@
           "method": {
             "type": "string"
           },
+          "note": {
+            "type": "string"
+          },
           "object": {
             "type": "string"
           }
@@ -152,7 +155,8 @@
         ],
         "type": "object"
       },
-      "type": "array"
+      "type": "array",
+      "uniqueItems": true
     },
     "UnknownTypesEnum": {
       "enum": [
