@@ -136,15 +136,18 @@
         "additionalProperties": false,
         "properties": {
           "class": {
+            "pattern": "^[a-zA-Z0-9_\\/]+$",
             "type": "string"
           },
           "method": {
+            "pattern": "^[a-zA-Z0-9_\\/]+$",
             "type": "string"
           },
           "note": {
             "type": "string"
           },
           "object": {
+            "pattern": "^[a-zA-Z0-9_\\/]+$",
             "type": "string"
           }
         },
