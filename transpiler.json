@@ -124,6 +124,10 @@
           "description": "dont insert into REPOSRC",
           "type": "boolean"
         },
+        "skipVersionCheck": {
+          "description": "skips version check, not recommended",
+          "type": "boolean"
+        },
         "unknownTypes": {
           "$ref": "#/definitions/UnknownTypesEnum",
           "description": "sets behavior for unknown types, either fail at compile- or run-time"
