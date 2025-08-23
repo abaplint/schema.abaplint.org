@@ -112,16 +112,35 @@
           },
           "type": "array"
         },
+        "populateTables": {
+          "additionalProperties": false,
+          "description": "populate tables, all tables are populated if undefined and they exist",
+          "properties": {
+            "reposrc": {
+              "description": "insert into REPOSRC, skips if equals false",
+              "type": "boolean"
+            },
+            "seosubco": {
+              "description": "insert into SEOSUBCO, skips if equals false",
+              "type": "boolean"
+            },
+            "seosubcodf": {
+              "description": "insert into SEOSUBCODF, skips if equals false",
+              "type": "boolean"
+            },
+            "seosubcotx": {
+              "description": "insert into SEOSUBCOTX, skips if equals false",
+              "type": "boolean"
+            }
+          },
+          "type": "object"
+        },
         "skip": {
           "$ref": "#/definitions/TestMethodList",
           "description": "list of unit tests to skip"
         },
         "skipConstants": {
           "description": "skip outputing constants, used for internal testing",
-          "type": "boolean"
-        },
-        "skipReposrc": {
-          "description": "dont insert into REPOSRC",
           "type": "boolean"
         },
         "skipVersionCheck": {
