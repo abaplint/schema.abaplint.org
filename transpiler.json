@@ -5,6 +5,13 @@
     "ITranspilerConfig": {
       "additionalProperties": false,
       "properties": {
+        "exclude_filter": {
+          "description": "list of regex, case insensitive",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
         "input_filter": {
           "description": "list of regex, case insensitive, empty gives all files, positive list",
           "items": {
