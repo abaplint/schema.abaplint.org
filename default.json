@@ -132,7 +132,8 @@
     "check_comments": {
       "exclude": [],
       "severity": "Error",
-      "allowEndOfLine": false
+      "allowEndOfLine": false,
+      "maxIssuesPerFile": 10
     },
     "check_ddic": {
       "exclude": [],
@@ -525,7 +526,8 @@
       "selectionScreenBlockIndentation": false,
       "globalClassSkipFirst": false,
       "ignoreGlobalClassDefinition": false,
-      "ignoreGlobalInterface": false
+      "ignoreGlobalInterface": false,
+      "maxIssuesPerFile": 10
     },
     "inline_data_old_versions": {
       "exclude": [],
@@ -555,7 +557,8 @@
       "ignoreGlobalInterface": false,
       "ignoreFunctionModuleName": false,
       "ignoreGlobalClassBoundaries": false,
-      "ignoreKeywords": []
+      "ignoreKeywords": [],
+      "maxIssuesPerFile": 10
     },
     "line_break_multiple_parameters": {
       "exclude": [],
@@ -569,7 +572,8 @@
     "line_length": {
       "exclude": [],
       "severity": "Error",
-      "length": 120
+      "length": 120,
+      "maxIssuesPerFile": 10
     },
     "line_only_punc": {
       "exclude": [],
@@ -709,7 +713,8 @@
       "constants": "^[LGM]?C.?_",
       "types": "^TY_",
       "methodParameters": "^[ICER].?_",
-      "allowIsPrefixBoolean": true
+      "allowIsPrefixBoolean": true,
+      "maxIssuesPerFile": 10
     },
     "no_public_attributes": {
       "exclude": [],
@@ -1040,7 +1045,8 @@
     },
     "unnecessary_chaining": {
       "exclude": [],
-      "severity": "Error"
+      "severity": "Error",
+      "maxIssuesPerFile": 10
     },
     "unnecessary_pragma": {
       "exclude": [],
