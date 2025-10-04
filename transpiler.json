@@ -32,11 +32,6 @@
             }
           ]
         },
-        "lib": {
-          "deprecated": true,
-          "description": "to be deprecated, \"lib\", use \"libs\" instead",
-          "type": "string"
-        },
         "libs": {
           "items": {
             "additionalProperties": false,
@@ -96,10 +91,6 @@
           "description": "adds filenames as comments in the output js",
           "type": "boolean"
         },
-        "extraSetup": {
-          "description": "extra setup script to be executed during initialization",
-          "type": "string"
-        },
         "ignoreSourceMap": {
           "description": "ignore source map",
           "type": "boolean"
@@ -142,13 +133,28 @@
           },
           "type": "object"
         },
+        "setup": {
+          "additionalProperties": false,
+          "description": "extra setup script to be executed during initialization",
+          "properties": {
+            "filename": {
+              "type": "string"
+            },
+            "postFunction": {
+              "type": "string"
+            },
+            "preFunction": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "filename"
+          ],
+          "type": "object"
+        },
         "skip": {
           "$ref": "#/definitions/TestMethodList",
           "description": "list of unit tests to skip"
-        },
-        "skipConstants": {
-          "description": "skip outputing constants, used for internal testing",
-          "type": "boolean"
         },
         "skipVersionCheck": {
           "description": "skips version check, not recommended",
