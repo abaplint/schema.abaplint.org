@@ -10,14 +10,16 @@
           "items": {
             "type": "string"
           },
-          "type": "array"
+          "type": "array",
+          "uniqueItems": true
         },
         "input_filter": {
           "description": "list of regex, case insensitive, empty gives all files, positive list",
           "items": {
             "type": "string"
           },
-          "type": "array"
+          "type": "array",
+          "uniqueItems": true
         },
         "input_folder": {
           "anyOf": [
@@ -36,6 +38,14 @@
           "items": {
             "additionalProperties": false,
             "properties": {
+              "exclude_filter": {
+                "description": "list of regex, case insensitive",
+                "items": {
+                  "type": "string"
+                },
+                "type": "array",
+                "uniqueItems": true
+              },
               "files": {
                 "anyOf": [
                   {
