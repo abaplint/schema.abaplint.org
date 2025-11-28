@@ -529,6 +529,10 @@
       "ignoreGlobalInterface": false,
       "maxIssuesPerFile": 10
     },
+    "index_completely_contained": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "inline_data_old_versions": {
       "exclude": [],
       "severity": "Error"
