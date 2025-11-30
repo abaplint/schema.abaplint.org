@@ -141,7 +141,8 @@
     },
     "check_include": {
       "exclude": [],
-      "severity": "Error"
+      "severity": "Error",
+      "allowUnused": false
     },
     "check_subrc": {
       "exclude": [],
