@@ -154,6 +154,7 @@
       "updateDatabase": true,
       "insertDatabase": true,
       "modifyDatabase": true,
+      "deleteDatabase": true,
       "readTable": true,
       "assign": true,
       "find": true
