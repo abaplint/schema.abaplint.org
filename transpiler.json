@@ -139,6 +139,10 @@
             "seosubcotx": {
               "description": "insert into SEOSUBCOTX, skips if equals false",
               "type": "boolean"
+            },
+            "wwwparams": {
+              "description": "insert into SEOSUBCOTX, skips if equals false",
+              "type": "boolean"
             }
           },
           "type": "object"
