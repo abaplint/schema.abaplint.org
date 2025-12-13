@@ -502,6 +502,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "identical_move": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "if_in_if": {
       "exclude": [],
       "severity": "Error"
@@ -699,6 +703,10 @@
       "severity": "Error"
     },
     "no_chained_assignment": {
+      "exclude": [],
+      "severity": "Error"
+    },
+    "no_comments_between_methods": {
       "exclude": [],
       "severity": "Error"
     },
