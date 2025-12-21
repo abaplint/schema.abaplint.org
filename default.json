@@ -817,7 +817,9 @@
       "formImplementation": true,
       "commonPart": true,
       "fieldGroups": true,
-      "replaceInto": true
+      "replaceInto": true,
+      "loopExtract": true,
+      "sortExtract": true
     },
     "omit_parameter_name": {
       "exclude": [],
