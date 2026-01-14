@@ -322,6 +322,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "fm_global_parameters_obsolete": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "forbidden_identifier": {
       "exclude": [],
       "severity": "Error",
