@@ -841,6 +841,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "parser_bad_exceptions": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "parser_error": {
       "exclude": [],
       "severity": "Error"
