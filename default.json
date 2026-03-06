@@ -42,6 +42,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "aff_and_xml": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "align_parameters": {
       "exclude": [],
       "severity": "Error"
