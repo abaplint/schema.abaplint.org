@@ -976,6 +976,10 @@
       "selectOption": "^S_.+$",
       "screenElement": "^SC_.+$"
     },
+    "selection_screen_texts_missing": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "sequential_blank": {
       "exclude": [],
       "severity": "Error",
