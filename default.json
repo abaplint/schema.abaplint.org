@@ -97,13 +97,36 @@
       "exclude": [],
       "severity": "Error"
     },
+    "cds_association_name": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "cds_comment_style": {
+      "exclude": [],
+      "severity": "Error"
+    },
+    "cds_field_order": {
       "exclude": [],
       "severity": "Error"
     },
     "cds_legacy_view": {
       "exclude": [],
       "severity": "Error"
+    },
+    "cds_naming": {
+      "exclude": [],
+      "severity": "Error",
+      "basicInterfaceView": "ZI_",
+      "compositeInterfaceView": "ZI_",
+      "consumptionView": "ZC_",
+      "basicRestrictedReuseView": "ZR_",
+      "compositeRestrictedReuseView": "ZR_",
+      "privateView": "ZP_",
+      "remoteAPIView": "ZA_",
+      "viewExtend": "ZX_",
+      "extensionIncludeView": "ZE_",
+      "derivationFunction": "ZF_",
+      "abstractEntity": "ZD_"
     },
     "cds_parser_error": {
       "exclude": [],
