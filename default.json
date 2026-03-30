@@ -97,6 +97,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "catch_and_raise": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "cds_association_name": {
       "exclude": [],
       "severity": "Error"
