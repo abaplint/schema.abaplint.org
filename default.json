@@ -745,6 +745,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "no_exclamation_escape": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "no_external_form_calls": {
       "exclude": [],
       "severity": "Error"
