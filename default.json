@@ -1112,7 +1112,8 @@
     "unnecessary_chaining": {
       "exclude": [],
       "severity": "Error",
-      "maxIssuesPerFile": 10
+      "maxIssuesPerFile": 10,
+      "ignoreExceptions": true
     },
     "unnecessary_pragma": {
       "exclude": [],
