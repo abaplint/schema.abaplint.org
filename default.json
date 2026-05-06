@@ -735,7 +735,8 @@
     },
     "no_aliases": {
       "exclude": [],
-      "severity": "Error"
+      "severity": "Error",
+      "ignorePrivate": false
     },
     "no_chained_assignment": {
       "exclude": [],
