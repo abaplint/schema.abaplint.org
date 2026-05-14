@@ -10,7 +10,8 @@
     "skipGeneratedProxyClasses": false,
     "skipGeneratedProxyInterfaces": false,
     "useApackDependencies": false,
-    "skipIncludesWithoutMain": false
+    "skipIncludesWithoutMain": false,
+    "errorOnDuplicateFilenames": false
   },
   "dependencies": [
     {
