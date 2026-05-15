@@ -140,8 +140,12 @@
               "description": "insert into SEOSUBCOTX, skips if equals false",
               "type": "boolean"
             },
+            "tadir": {
+              "description": "insert into TADIR, skips if equals false",
+              "type": "boolean"
+            },
             "wwwparams": {
-              "description": "insert into SEOSUBCOTX, skips if equals false",
+              "description": "insert into WWWPARAMS, skips if equals false",
               "type": "boolean"
             }
           },
