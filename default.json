@@ -274,7 +274,8 @@
       "insertTextpool": true,
       "deleteDynpro": true,
       "exportDynpro": true,
-      "dynamicSQL": true
+      "dynamicSQL": true,
+      "ignoreRAPQueryProvider": true
     },
     "db_operation_in_loop": {
       "exclude": [],
