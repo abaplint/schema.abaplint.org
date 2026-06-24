@@ -843,7 +843,8 @@
       "statements": 100,
       "errorWhenEmpty": true,
       "ignoreTestClasses": false,
-      "checkForms": true
+      "checkForms": true,
+      "checkFunctionModules": true
     },
     "method_overwrites_builtin": {
       "exclude": [],
