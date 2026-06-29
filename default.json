@@ -21,7 +21,6 @@
     }
   ],
   "syntax": {
-    "version": "v758",
     "errorNamespace": "^(Z|Y|LCL_|TY_|LIF_)",
     "globalConstants": [],
     "globalMacros": []
@@ -1235,6 +1234,10 @@
       "severity": "Error"
     },
     "sy_modification": {
+      "exclude": [],
+      "severity": "Error"
+    },
+    "sy_read_restriction": {
       "exclude": [],
       "severity": "Error"
     },
