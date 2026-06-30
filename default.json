@@ -916,6 +916,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "no_macros": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "no_prefixes": {
       "exclude": [],
       "severity": "Error",
