@@ -21,6 +21,10 @@
     }
   ],
   "syntax": {
+    "version": {
+      "release": "Newest",
+      "language": "Normal"
+    },
     "errorNamespace": "^(Z|Y|LCL_|TY_|LIF_)",
     "globalConstants": [],
     "globalMacros": []
