@@ -277,6 +277,7 @@
       "insertTextpool": true,
       "deleteDynpro": true,
       "exportDynpro": true,
+      "editorCallForReport": true,
       "dynamicSQL": true,
       "ignoreRAPQueryProvider": true
     },
