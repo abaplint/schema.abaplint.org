@@ -1135,6 +1135,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "redundant_conversion": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "release_idoc": {
       "exclude": [],
       "severity": "Error"
