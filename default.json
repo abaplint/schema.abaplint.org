@@ -224,6 +224,11 @@
       "exclude": [],
       "severity": "Error"
     },
+    "clear_exporting_parameters": {
+      "exclude": [],
+      "severity": "Error",
+      "skipNames": []
+    },
     "cloud_types": {
       "exclude": [],
       "severity": "Error"
