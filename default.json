@@ -931,6 +931,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "no_mandt_in_database_operations": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "no_prefixes": {
       "exclude": [],
       "severity": "Error",
