@@ -110,6 +110,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "cds_check_syntax": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "cds_comment_style": {
       "exclude": [],
       "severity": "Error"
