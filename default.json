@@ -919,6 +919,23 @@
       "exclude": [],
       "severity": "Error"
     },
+    "no_dynamic_stuff": {
+      "exclude": [],
+      "severity": "Error",
+      "callMethod": true,
+      "callFunction": true,
+      "callDatabaseProcedure": true,
+      "callTransformation": true,
+      "callTransaction": true,
+      "perform": true,
+      "submit": true,
+      "createObject": true,
+      "createData": true,
+      "getBadi": true,
+      "assign": true,
+      "internalTable": true,
+      "exportImport": true
+    },
     "no_exclamation_escape": {
       "exclude": [],
       "severity": "Error"
