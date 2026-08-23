@@ -1371,6 +1371,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "xml_bom": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "xml_consistency": {
       "exclude": [],
       "severity": "Error",
