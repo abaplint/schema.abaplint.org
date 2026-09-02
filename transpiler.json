@@ -32,7 +32,8 @@
               },
               "type": "array"
             }
-          ]
+          ],
+          "uniqueItems": true
         },
         "libs": {
           "items": {
