@@ -1395,7 +1395,8 @@
     "xml_consistency": {
       "exclude": [],
       "severity": "Error",
-      "textAndTranslationLengthSeverity": "Error"
+      "textAndTranslationLengthSeverity": "Error",
+      "dataElementSeverity": "Error"
     }
   }
 }
