@@ -1388,6 +1388,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "wrong_abapdoc_position": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "xml_bom": {
       "exclude": [],
       "severity": "Error"
