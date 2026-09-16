@@ -1100,6 +1100,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "prefer_insert_into_table": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "prefer_is_not": {
       "exclude": [],
       "severity": "Error"
