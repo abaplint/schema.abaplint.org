@@ -1092,6 +1092,10 @@
       "severity": "Error",
       "style": "upper"
     },
+    "prefer_abap_bool": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "prefer_corresponding": {
       "exclude": [],
       "severity": "Error"
