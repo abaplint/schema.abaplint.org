@@ -61,6 +61,7 @@
                 ]
               },
               "folder": {
+                "description": "relative to the current working directory",
                 "type": "string"
               },
               "url": {
