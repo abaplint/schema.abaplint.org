@@ -1146,6 +1146,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "prefer_string_template": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "prefer_xsdbool": {
       "exclude": [],
       "severity": "Error"
