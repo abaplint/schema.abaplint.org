@@ -1096,6 +1096,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "prefer_abap_bool_values": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "prefer_corresponding": {
       "exclude": [],
       "severity": "Error"
