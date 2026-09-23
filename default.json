@@ -1338,6 +1338,10 @@
       "maxIssuesPerFile": 10,
       "ignoreExceptions": true
     },
+    "unnecessary_loop_guard": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "unnecessary_pragma": {
       "exclude": [],
       "severity": "Error",
