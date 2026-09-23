@@ -76,6 +76,7 @@
           "$ref": "#/definitions/ITranspilerOptions"
         },
         "output_folder": {
+          "minLength": 1,
           "type": "string"
         },
         "write_source_map": {
