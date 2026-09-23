@@ -1392,6 +1392,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "use_message_class": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "use_new": {
       "exclude": [],
       "severity": "Error"
