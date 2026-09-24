@@ -5,6 +5,35 @@
     "ITranspilerConfig": {
       "additionalProperties": false,
       "properties": {
+        "converter": {
+          "additionalProperties": false,
+          "description": "experimental",
+          "properties": {
+            "input_folder": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "items": {
+                    "type": "string"
+                  },
+                  "type": "array"
+                }
+              ],
+              "uniqueItems": true
+            },
+            "output_folder": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "input_folder",
+            "output_folder"
+          ],
+          "type": "object"
+        },
         "exclude_filter": {
           "description": "list of regex, case insensitive",
           "items": {
