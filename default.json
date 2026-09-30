@@ -1424,7 +1424,8 @@
       "exclude": [],
       "severity": "Error",
       "textAndTranslationLengthSeverity": "Error",
-      "dataElementSeverity": "Error"
+      "dataElementSeverity": "Error",
+      "transparentTableSeverity": "Error"
     }
   }
 }
