@@ -328,6 +328,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "else_after_all_returns": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "empty_event": {
       "exclude": [],
       "severity": "Error"
