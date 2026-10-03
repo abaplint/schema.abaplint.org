@@ -1171,6 +1171,10 @@
         "LE"
       ]
     },
+    "preferred_parameter_ignored": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "prefix_is_current_class": {
       "exclude": [],
       "severity": "Error",
