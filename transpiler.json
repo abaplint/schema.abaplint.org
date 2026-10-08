@@ -93,6 +93,11 @@
                 "description": "relative to the current working directory",
                 "type": "string"
               },
+              "name": {
+                "description": "output directory name; defaults to the repository or local folder name",
+                "minLength": 1,
+                "type": "string"
+              },
               "url": {
                 "type": "string"
               }
