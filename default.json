@@ -357,7 +357,8 @@
       "do": true,
       "at": true,
       "try": true,
-      "when": true
+      "when": true,
+      "catch": false
     },
     "exit_or_check": {
       "exclude": [],
