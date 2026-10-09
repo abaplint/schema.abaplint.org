@@ -113,6 +113,10 @@
           "minLength": 1,
           "type": "string"
         },
+        "skip_duplicate_dependencies": {
+          "description": "skip duplicate dependency objects after the first library in libs, with a warning; defaults to false",
+          "type": "boolean"
+        },
         "write_source_map": {
           "type": "boolean"
         },
