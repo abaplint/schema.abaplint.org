@@ -42,6 +42,10 @@
           "type": "array",
           "uniqueItems": true
         },
+        "incremental_output": {
+          "description": "Skip unchanged generated files and remove tracked obsolete output",
+          "type": "boolean"
+        },
         "input_filter": {
           "description": "list of regex, case insensitive, empty gives all files, positive list",
           "items": {
