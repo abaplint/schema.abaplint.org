@@ -694,6 +694,11 @@
       "severity": "Error",
       "ignoreExceptions": true
     },
+    "generic_regex": {
+      "exclude": [],
+      "severity": "Error",
+      "regexes": []
+    },
     "global_class": {
       "exclude": [],
       "severity": "Error"
