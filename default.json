@@ -51,6 +51,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "abapdoc_parameter_names": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "add_test_attributes": {
       "exclude": [],
       "severity": "Error"
