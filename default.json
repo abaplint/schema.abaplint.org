@@ -315,6 +315,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "delete_index_in_loop": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "description_empty": {
       "exclude": [],
       "severity": "Error"
