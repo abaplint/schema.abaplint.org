@@ -1284,6 +1284,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "sort_empty_key": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "space_before_colon": {
       "exclude": [],
       "severity": "Error"
