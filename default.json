@@ -47,6 +47,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "abapdoc_leading_at": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "add_test_attributes": {
       "exclude": [],
       "severity": "Error"
