@@ -177,6 +177,10 @@
       "severity": "Error",
       "skipNames": []
     },
+    "changing_sorted_line": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "check_abstract": {
       "exclude": [],
       "severity": "Error"
