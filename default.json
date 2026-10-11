@@ -43,6 +43,10 @@
       "interfaceDefinition": false,
       "ignoreTestClasses": true
     },
+    "abapdoc_html_tag": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "add_test_attributes": {
       "exclude": [],
       "severity": "Error"
