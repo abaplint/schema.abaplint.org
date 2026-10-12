@@ -1206,6 +1206,10 @@
       "severity": "Error",
       "omitMeInstanceCalls": true
     },
+    "range_row_values": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "reduce_procedural_code": {
       "exclude": [],
       "severity": "Error",
