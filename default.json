@@ -394,6 +394,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "final_newline": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "fm_global_parameters_obsolete": {
       "exclude": [],
       "severity": "Error"
