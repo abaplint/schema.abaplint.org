@@ -784,6 +784,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "inline_packed_computation": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "intf_referencing_clas": {
       "exclude": [],
       "severity": "Error",
