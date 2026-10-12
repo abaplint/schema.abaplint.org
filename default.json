@@ -1456,7 +1456,8 @@
     },
     "use_message_class": {
       "exclude": [],
-      "severity": "Error"
+      "severity": "Error",
+      "allowExceptions": true
     },
     "use_new": {
       "exclude": [],
