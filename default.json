@@ -1146,6 +1146,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "prefer_inline_cast": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "prefer_insert_into_table": {
       "exclude": [],
       "severity": "Error"
