@@ -797,6 +797,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "is_assigned_in_loop": {
+      "exclude": [],
+      "severity": "Warning"
+    },
     "keep_single_parameter_on_one_line": {
       "exclude": [],
       "severity": "Error",
