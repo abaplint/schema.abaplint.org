@@ -3595,7 +3595,7 @@
                   "type": "boolean"
                 }
               ],
-              "description": "prefer pragmas over pseudo comments \nTags: SingleFile, Styleguide\nhttps://rules.abaplint.org/prefer_pragmas"
+              "description": "prefer pragmas over pseudo comments\nTags: SingleFile, Styleguide\nhttps://rules.abaplint.org/prefer_pragmas"
             },
             "prefer_raise_exception_new": {
               "anyOf": [
@@ -5960,7 +5960,7 @@
                   "type": "boolean"
                 }
               ],
-              "description": "prefer pragmas over pseudo comments \nTags: SingleFile, Styleguide\nhttps://rules.abaplint.org/prefer_pragmas"
+              "description": "prefer pragmas over pseudo comments\nTags: SingleFile, Styleguide\nhttps://rules.abaplint.org/prefer_pragmas"
             },
             "prefer_raise_exception_new": {
               "anyOf": [
