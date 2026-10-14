@@ -3122,7 +3122,7 @@
                   "type": "boolean"
                 }
               ],
-              "description": "Keep max one method parameter description per line\nTags: SingleFile, Whitespace\nhttps://rules.abaplint.org/max_one_method_parameter_per_line"
+              "description": "Keep max one method parameter description per line\nTags: SingleFile, Whitespace, Quickfix\nhttps://rules.abaplint.org/max_one_method_parameter_per_line"
             },
             "max_one_statement": {
               "anyOf": [
@@ -5487,7 +5487,7 @@
                   "type": "boolean"
                 }
               ],
-              "description": "Keep max one method parameter description per line\nTags: SingleFile, Whitespace\nhttps://rules.abaplint.org/max_one_method_parameter_per_line"
+              "description": "Keep max one method parameter description per line\nTags: SingleFile, Whitespace, Quickfix\nhttps://rules.abaplint.org/max_one_method_parameter_per_line"
             },
             "max_one_statement": {
               "anyOf": [
