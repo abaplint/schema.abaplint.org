@@ -9,6 +9,14 @@
           "additionalProperties": false,
           "description": "experimental",
           "properties": {
+            "exclude_filter": {
+              "description": "list of regex, case insensitive",
+              "items": {
+                "type": "string"
+              },
+              "type": "array",
+              "uniqueItems": true
+            },
             "input_folder": {
               "anyOf": [
                 {
