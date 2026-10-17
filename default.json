@@ -63,6 +63,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "alias_never_reassigned": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "align_parameters": {
       "exclude": [],
       "severity": "Error"
@@ -107,6 +111,14 @@
       "severity": "Error"
     },
     "begin_single_include": {
+      "exclude": [],
+      "severity": "Error"
+    },
+    "boolean_flag_via_if": {
+      "exclude": [],
+      "severity": "Error"
+    },
+    "bound_check_after_create": {
       "exclude": [],
       "severity": "Error"
     },
@@ -244,6 +256,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "clear_after_declaration": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "clear_exporting_parameters": {
       "exclude": [],
       "severity": "Error",
@@ -267,6 +283,10 @@
       "severity": "Error",
       "mapping": []
     },
+    "constant_condition": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "constructor_visibility_public": {
       "exclude": [],
       "severity": "Error"
@@ -275,6 +295,14 @@
       "exclude": [],
       "severity": "Error",
       "spaces": 1
+    },
+    "copy_chain": {
+      "exclude": [],
+      "severity": "Error"
+    },
+    "copy_of_initial_variable": {
+      "exclude": [],
+      "severity": "Error"
     },
     "cyclic_oo": {
       "exclude": [],
@@ -1304,6 +1332,10 @@
       "severity": "Error",
       "skipNames": []
     },
+    "single_use_expression_temp": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "slow_parameter_passing": {
       "exclude": [],
       "severity": "Error"
@@ -1375,6 +1407,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "try_cast_empty_catch": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "try_without_catch": {
       "exclude": [],
       "severity": "Error"
@@ -1403,6 +1439,10 @@
       "severity": "Error",
       "maxIssuesPerFile": 10,
       "ignoreExceptions": true
+    },
+    "unnecessary_copy": {
+      "exclude": [],
+      "severity": "Error"
     },
     "unnecessary_loop_guard": {
       "exclude": [],
