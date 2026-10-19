@@ -126,6 +126,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "cast_via_generic_reference": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "catch_and_raise": {
       "exclude": [],
       "severity": "Error"
@@ -257,6 +261,10 @@
       "severity": "Error"
     },
     "clear_after_declaration": {
+      "exclude": [],
+      "severity": "Error"
+    },
+    "clear_before_overwrite": {
       "exclude": [],
       "severity": "Error"
     },
