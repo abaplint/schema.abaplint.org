@@ -1,7 +1,105 @@
 {
-  "$ref": "#/definitions/ITranspilerConfig",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "definitions": {
+    "ICLITranspilerOptions": {
+      "additionalProperties": false,
+      "properties": {
+        "addCommonJS": {
+          "description": "adds common js modules",
+          "type": "boolean"
+        },
+        "addFilenames": {
+          "description": "adds filenames as comments in the output js",
+          "type": "boolean"
+        },
+        "ignoreSourceMap": {
+          "description": "ignore source map",
+          "type": "boolean"
+        },
+        "ignoreSyntaxCheck": {
+          "description": "ignore syntax check, used for internal testing",
+          "type": "boolean"
+        },
+        "importProg": {
+          "description": "import programs",
+          "type": "boolean"
+        },
+        "keywords": {
+          "description": "list of keywords to rename, if not supplied default will be used",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "populateTables": {
+          "additionalProperties": false,
+          "description": "populate tables, all tables are populated if undefined and they exist",
+          "properties": {
+            "reposrc": {
+              "description": "insert into REPOSRC, skips if equals false",
+              "type": "boolean"
+            },
+            "seosubco": {
+              "description": "insert into SEOSUBCO, skips if equals false",
+              "type": "boolean"
+            },
+            "seosubcodf": {
+              "description": "insert into SEOSUBCODF, skips if equals false",
+              "type": "boolean"
+            },
+            "seosubcotx": {
+              "description": "insert into SEOSUBCOTX, skips if equals false",
+              "type": "boolean"
+            },
+            "tadir": {
+              "description": "insert into TADIR, skips if equals false",
+              "type": "boolean"
+            },
+            "wwwparams": {
+              "description": "insert into WWWPARAMS, skips if equals false",
+              "type": "boolean"
+            }
+          },
+          "type": "object"
+        },
+        "setup": {
+          "additionalProperties": false,
+          "description": "extra setup script to be executed during initialization",
+          "properties": {
+            "filename": {
+              "type": "string"
+            },
+            "postFunction": {
+              "type": "string"
+            },
+            "preFunction": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "filename"
+          ],
+          "type": "object"
+        },
+        "sharedTypeFactories": {
+          "description": "Deduplicate generated composite type constructors within each output module (default: true).",
+          "type": "boolean"
+        },
+        "skip": {
+          "$ref": "#/definitions/TestMethodList",
+          "description": "list of unit tests to skip"
+        },
+        "skipVersionCheck": {
+          "description": "skips version check, not recommended",
+          "type": "boolean"
+        },
+        "unknownTypes": {
+          "$ref": "#/definitions/UnknownTypesEnum",
+          "description": "sets behavior for unknown types, either fail at compile- or run-time"
+        }
+      },
+      "type": "object"
+    },
     "ITranspilerConfig": {
       "additionalProperties": false,
       "properties": {
@@ -119,7 +217,7 @@
           "type": "array"
         },
         "options": {
-          "$ref": "#/definitions/ITranspilerOptions"
+          "$ref": "#/definitions/ICLITranspilerOptions"
         },
         "output_folder": {
           "minLength": 1,
@@ -141,101 +239,6 @@
         "output_folder",
         "options"
       ],
-      "type": "object"
-    },
-    "ITranspilerOptions": {
-      "additionalProperties": false,
-      "properties": {
-        "addCommonJS": {
-          "description": "adds common js modules",
-          "type": "boolean"
-        },
-        "addFilenames": {
-          "description": "adds filenames as comments in the output js",
-          "type": "boolean"
-        },
-        "ignoreSourceMap": {
-          "description": "ignore source map",
-          "type": "boolean"
-        },
-        "ignoreSyntaxCheck": {
-          "description": "ignore syntax check, used for internal testing",
-          "type": "boolean"
-        },
-        "importProg": {
-          "description": "import programs",
-          "type": "boolean"
-        },
-        "keywords": {
-          "description": "list of keywords to rename, if not supplied default will be used",
-          "items": {
-            "type": "string"
-          },
-          "type": "array"
-        },
-        "populateTables": {
-          "additionalProperties": false,
-          "description": "populate tables, all tables are populated if undefined and they exist",
-          "properties": {
-            "reposrc": {
-              "description": "insert into REPOSRC, skips if equals false",
-              "type": "boolean"
-            },
-            "seosubco": {
-              "description": "insert into SEOSUBCO, skips if equals false",
-              "type": "boolean"
-            },
-            "seosubcodf": {
-              "description": "insert into SEOSUBCODF, skips if equals false",
-              "type": "boolean"
-            },
-            "seosubcotx": {
-              "description": "insert into SEOSUBCOTX, skips if equals false",
-              "type": "boolean"
-            },
-            "tadir": {
-              "description": "insert into TADIR, skips if equals false",
-              "type": "boolean"
-            },
-            "wwwparams": {
-              "description": "insert into WWWPARAMS, skips if equals false",
-              "type": "boolean"
-            }
-          },
-          "type": "object"
-        },
-        "setup": {
-          "additionalProperties": false,
-          "description": "extra setup script to be executed during initialization",
-          "properties": {
-            "filename": {
-              "type": "string"
-            },
-            "postFunction": {
-              "type": "string"
-            },
-            "preFunction": {
-              "type": "string"
-            }
-          },
-          "required": [
-            "filename"
-          ],
-          "type": "object"
-        },
-        "skip": {
-          "$ref": "#/definitions/TestMethodList",
-          "description": "list of unit tests to skip"
-        },
-        "skipVersionCheck": {
-          "description": "skips version check, not recommended",
-          "type": "boolean"
-        },
-        "unknownTypes": {
-          "$ref": "#/definitions/UnknownTypesEnum",
-          "description": "sets behavior for unknown types, either fail at compile- or run-time"
-        }
-      },
       "type": "object"
     },
     "TestMethodList": {
