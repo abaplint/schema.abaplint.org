@@ -1232,6 +1232,11 @@
       "exclude": [],
       "severity": "Error"
     },
+    "prefer_raise_message": {
+      "exclude": [],
+      "severity": "Error",
+      "ignoreExceptionClasses": []
+    },
     "prefer_returning_to_exporting": {
       "exclude": [],
       "severity": "Error"
