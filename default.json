@@ -106,6 +106,14 @@
       "exportToMemory": true,
       "exportToDatabase": true
     },
+    "bdef_check_syntax": {
+      "exclude": [],
+      "severity": "Error"
+    },
+    "bdef_parser_error": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "begin_end_names": {
       "exclude": [],
       "severity": "Error"
