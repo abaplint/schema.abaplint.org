@@ -208,6 +208,10 @@
                 "minLength": 1,
                 "type": "string"
               },
+              "ref": {
+                "description": "commit SHA, tag or branch to check out from url; defaults to the default branch",
+                "type": "string"
+              },
               "url": {
                 "type": "string"
               }
