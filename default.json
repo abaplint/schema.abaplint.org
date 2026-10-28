@@ -455,6 +455,11 @@
       "severity": "Error",
       "check": []
     },
+    "forbidden_kernel_write": {
+      "exclude": [],
+      "severity": "Error",
+      "allow": []
+    },
     "forbidden_pseudo_and_pragma": {
       "exclude": [],
       "severity": "Error",
