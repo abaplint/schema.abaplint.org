@@ -55,6 +55,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "abapdoc_short_link": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "abapdoc_shorttext_length": {
       "exclude": [],
       "severity": "Error"
