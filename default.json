@@ -1355,6 +1355,10 @@
       "severity": "Error",
       "lines": 4
     },
+    "sequential_read_sorted": {
+      "exclude": [],
+      "severity": "Warning"
+    },
     "short_case": {
       "exclude": [],
       "severity": "Error",
