@@ -1309,7 +1309,8 @@
     },
     "redundant_conversion": {
       "exclude": [],
-      "severity": "Error"
+      "severity": "Error",
+      "assignmentTarget": true
     },
     "release_idoc": {
       "exclude": [],
