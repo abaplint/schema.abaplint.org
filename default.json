@@ -843,6 +843,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "inline_generic_source": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "inline_packed_computation": {
       "exclude": [],
       "severity": "Error"
