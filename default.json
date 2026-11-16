@@ -309,7 +309,8 @@
     },
     "constant_condition": {
       "exclude": [],
-      "severity": "Error"
+      "severity": "Error",
+      "exclusiveValues": true
     },
     "constructor_visibility_public": {
       "exclude": [],
@@ -786,7 +787,8 @@
     },
     "identical_conditions": {
       "exclude": [],
-      "severity": "Error"
+      "severity": "Error",
+      "selfComparison": true
     },
     "identical_contents": {
       "exclude": [],
