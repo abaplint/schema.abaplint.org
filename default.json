@@ -447,6 +447,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "field_symbol_never_assigned": {
+      "exclude": [],
+      "severity": "Error"
+    },
     "final_newline": {
       "exclude": [],
       "severity": "Error"
