@@ -1479,6 +1479,12 @@
       "reportDynamic": false,
       "reportNoCheck": false
     },
+    "unit_test_assertions": {
+      "exclude": [],
+      "severity": "Warning",
+      "cannotFail": true,
+      "assertStatement": true
+    },
     "unknown_types": {
       "exclude": [],
       "severity": "Error"
