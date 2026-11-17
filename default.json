@@ -1411,6 +1411,10 @@
       "exclude": [],
       "severity": "Error"
     },
+    "stale_subrc": {
+      "exclude": [],
+      "severity": "Warning"
+    },
     "start_at_tab": {
       "exclude": [],
       "severity": "Error"
