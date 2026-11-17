@@ -213,6 +213,12 @@
       "exclude": [],
       "severity": "Error"
     },
+    "character_field_literal_blanks": {
+      "exclude": [],
+      "severity": "Warning",
+      "searchPattern": true,
+      "concatenation": true
+    },
     "check_abstract": {
       "exclude": [],
       "severity": "Error"
