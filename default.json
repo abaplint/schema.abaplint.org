@@ -930,6 +930,12 @@
       "expectedConstant": "^LC_.+$",
       "expectedFS": "^<L._.+>$"
     },
+    "loop_target_misuse": {
+      "exclude": [],
+      "severity": "Error",
+      "nestedLoop": true,
+      "intoFieldSymbol": true
+    },
     "macro_naming": {
       "exclude": [],
       "severity": "Error",
