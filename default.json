@@ -1456,6 +1456,11 @@
       "exclude": [],
       "severity": "Error"
     },
+    "suspicious_loop": {
+      "exclude": [],
+      "severity": "Warning",
+      "unchangedCondition": true
+    },
     "sy_modification": {
       "exclude": [],
       "severity": "Error"
