@@ -1409,6 +1409,12 @@
       "exclude": [],
       "severity": "Error"
     },
+    "sort_required": {
+      "exclude": [],
+      "severity": "Warning",
+      "binarySearch": true,
+      "adjacentDuplicates": true
+    },
     "space_before_colon": {
       "exclude": [],
       "severity": "Error"
