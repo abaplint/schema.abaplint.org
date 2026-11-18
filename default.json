@@ -503,6 +503,17 @@
       "exclude": [],
       "severity": "Error"
     },
+    "function_module_parameter_names": {
+      "exclude": [],
+      "severity": "Error",
+      "patternKind": "required",
+      "ignoreNames": [],
+      "ignorePatterns": [],
+      "importing": "^I._.+$",
+      "exporting": "^E._.+$",
+      "changing": "^C._.+$",
+      "tables": "^T._.+$"
+    },
     "function_module_recommendations": {
       "exclude": [],
       "severity": "Error",
