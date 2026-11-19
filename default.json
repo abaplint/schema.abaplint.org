@@ -1517,6 +1517,13 @@
       "reportDynamic": false,
       "reportNoCheck": false
     },
+    "unhandled_classic_exception": {
+      "exclude": [],
+      "severity": "Warning",
+      "missingOthers": true,
+      "missingExceptions": true,
+      "allowLiteralArguments": true
+    },
     "unit_test_assertions": {
       "exclude": [],
       "severity": "Warning",
