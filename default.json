@@ -951,7 +951,8 @@
       "exclude": [],
       "severity": "Error",
       "nestedLoop": true,
-      "intoFieldSymbol": true
+      "intoFieldSymbol": true,
+      "usedAfterLoop": true
     },
     "macro_naming": {
       "exclude": [],
