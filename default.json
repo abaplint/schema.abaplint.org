@@ -1351,7 +1351,10 @@
     },
     "rfc_error_handling": {
       "exclude": [],
-      "severity": "Error"
+      "severity": "Error",
+      "startingNewTask": true,
+      "errorMessage": true,
+      "requireMessage": false
     },
     "select_add_order_by": {
       "exclude": [],
