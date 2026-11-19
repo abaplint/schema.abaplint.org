@@ -1525,7 +1525,8 @@
       "severity": "Warning",
       "missingOthers": true,
       "missingExceptions": true,
-      "allowLiteralArguments": true
+      "allowLiteralArguments": true,
+      "missingErrorMessage": false
     },
     "unit_test_assertions": {
       "exclude": [],
