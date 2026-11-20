@@ -251,7 +251,9 @@
       "deleteDatabase": true,
       "readTable": true,
       "assign": true,
-      "find": true
+      "find": true,
+      "callFunction": true,
+      "callMethod": true
     },
     "check_syntax": {
       "exclude": [],
