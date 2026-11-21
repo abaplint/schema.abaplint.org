@@ -487,6 +487,11 @@
       "ignoreGlobalClassDefinition": false,
       "ignoreGlobalInterface": false
     },
+    "forbidden_statement": {
+      "exclude": [],
+      "severity": "Error",
+      "statements": []
+    },
     "forbidden_void_type": {
       "exclude": [],
       "severity": "Error",
