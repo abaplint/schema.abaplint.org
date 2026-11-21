@@ -1192,7 +1192,8 @@
       "fieldGroups": true,
       "replaceInto": true,
       "loopExtract": true,
-      "sortExtract": true
+      "sortExtract": true,
+      "translate": true
     },
     "omit_parameter_name": {
       "exclude": [],
