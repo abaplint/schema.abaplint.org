@@ -399,7 +399,8 @@
     },
     "downport": {
       "exclude": [],
-      "severity": "Error"
+      "severity": "Error",
+      "tableExpressionNotFound": "RAISE EXCEPTION TYPE cx_sy_itab_line_not_found."
     },
     "dynamic_where_empty": {
       "exclude": [],
