@@ -1086,7 +1086,8 @@
       "getBadi": true,
       "assign": true,
       "internalTable": true,
-      "exportImport": true
+      "exportImport": true,
+      "assignOldVariantCloud": true
     },
     "no_exclamation_escape": {
       "exclude": [],
