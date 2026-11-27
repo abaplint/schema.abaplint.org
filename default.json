@@ -401,6 +401,17 @@
       "exclude": [],
       "severity": "Error"
     },
+    "dynamic_where_empty": {
+      "exclude": [],
+      "severity": "Error",
+      "select": true,
+      "openCursor": true,
+      "deleteDatabase": true,
+      "updateDatabase": true,
+      "modifyDatabase": true,
+      "ignoreTables": [],
+      "skipUpTo": true
+    },
     "dynpro_checks": {
       "exclude": [],
       "severity": "Error"
